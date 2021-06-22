@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="employee_title">Employee</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.comp.css">
+</head>
+<body>
+    <div class="u-background-gray">
+        <h1 class="u-center-text u-margin-bottom-med">Employee requests</h1>
+        <div class="row">
+      
+            <div class="col-1-of-2 u-center-text">
+                <h1 class="u-margin-bottom-med">Past Requests</h1>
+                <div id="past_req_container" class="u-margin-bottom-med">
+                    <h3>There are no requests</h3>
+                </div>
+                <button id="lout1" onclick="log_out()" type="button" class="btn">Log out</button>
+            </div>
+            <div class="col-1-of-2 u-center-text">
+                <h1 class="u-margin-bottom-med">Pending Requests</h1>
+                <div id="pend_req_container" class="u-margin-bottom-med">
+                    <h3>There are no requests</h3>
+                </div>
+                <button id="request_button" onclick="new_request()" type="button" class="btn">Submit request</button>
+            </div>
+
+            
+        </div>
+    </div>
+</body>
+    <script src="scripts/logout.js"></script>
+    <script src="scripts/employee_page.js"></script>
+</html>

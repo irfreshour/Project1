@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="logHead">Login</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.comp.css">
+
+</head>
+<body>
+    <div class="u-background-gray">
+
+    <h1 class="u-center-text">Login</h1>
+    <br>
+    <div class="u-center-text">Employees may log in to review or submit reimbursement requests. Alternatively, managers may review reimbursement requests sent by employees to review for approval.</div>
+    <br>
+
+    <form class="form">
+        <div class="form__group">
+
+            <label class="form__label" for="email">email:</label>
+            <br>
+            <input class="form__input" type="text" id="email" name="email"><br><br>
+            <label class="form__label" for="pw">password:</label>
+            <br>
+            <input class="form__input" type="text" id="pw" name="pw"><br><br>
+            <button id="login_button" onclick="log_in()" type="button" class="btn">Submit</button>
+        </div>
+    </form>
+    
+    
+    </div>
+
+</body>
+<script src="scripts/login.js"></script>
+</html>

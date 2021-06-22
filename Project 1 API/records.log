@@ -1,0 +1,927 @@
+2021-06-20 16:32:28,707 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-20 16:32:40,113 INFO 127.0.0.1 - - [20/Jun/2021 16:32:40] "OPTIONS /login HTTP/1.1" 200 -
+2021-06-20 16:32:40,228 INFO 127.0.0.1 - - [20/Jun/2021 16:32:40] "[31m[1mPOST /login HTTP/1.1[0m" 400 -
+2021-06-20 16:32:57,645 INFO 127.0.0.1 - - [20/Jun/2021 16:32:57] "OPTIONS /login HTTP/1.1" 200 -
+2021-06-20 16:32:57,685 INFO 127.0.0.1 - - [20/Jun/2021 16:32:57] "[31m[1mPOST /login HTTP/1.1[0m" 400 -
+2021-06-20 16:33:14,877 INFO 127.0.0.1 - - [20/Jun/2021 16:33:14] "OPTIONS /login HTTP/1.1" 200 -
+2021-06-20 16:33:14,942 INFO 127.0.0.1 - - [20/Jun/2021 16:33:14] "POST /login HTTP/1.1" 200 -
+2021-06-20 16:37:51,165 INFO 127.0.0.1 - - [20/Jun/2021 16:37:51] "OPTIONS /requests HTTP/1.1" 200 -
+2021-06-20 16:37:51,215 ERROR Exception on /requests [POST]
+Traceback (most recent call last):
+  File "C:\Users\isaac\PycharmProjects\ExpenseReimbursmentProject\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\isaac\PycharmProjects\ExpenseReimbursmentProject\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\isaac\PycharmProjects\ExpenseReimbursmentProject\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\isaac\PycharmProjects\ExpenseReimbursmentProject\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\isaac\PycharmProjects\ExpenseReimbursmentProject\venv\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\isaac\PycharmProjects\ExpenseReimbursmentProject\main.py", line 58, in create_request
+    account_id = get_incoming_account_id()
+  File "C:\Users\isaac\PycharmProjects\ExpenseReimbursmentProject\main.py", line 27, in get_incoming_account_id
+    account_id: int = int(request.headers.get("accountID"))
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+2021-06-20 16:37:51,259 INFO 127.0.0.1 - - [20/Jun/2021 16:37:51] "[35m[1mPOST /requests HTTP/1.1[0m" 500 -
+2021-06-20 16:38:02,254 INFO 127.0.0.1 - - [20/Jun/2021 16:38:02] "OPTIONS /requests HTTP/1.1" 200 -
+2021-06-20 16:38:02,287 ERROR Exception on /requests [POST]
+Traceback (most recent call last):
+  File "C:\Users\isaac\PycharmProjects\ExpenseReimbursmentProject\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\isaac\PycharmProjects\ExpenseReimbursmentProject\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\isaac\PycharmProjects\ExpenseReimbursmentProject\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\isaac\PycharmProjects\ExpenseReimbursmentProject\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\isaac\PycharmProjects\ExpenseReimbursmentProject\venv\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\isaac\PycharmProjects\ExpenseReimbursmentProject\main.py", line 58, in create_request
+    account_id = get_incoming_account_id()
+  File "C:\Users\isaac\PycharmProjects\ExpenseReimbursmentProject\main.py", line 27, in get_incoming_account_id
+    account_id: int = int(request.headers.get("accountID"))
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+2021-06-20 16:38:02,295 INFO 127.0.0.1 - - [20/Jun/2021 16:38:02] "[35m[1mPOST /requests HTTP/1.1[0m" 500 -
+2021-06-20 16:38:13,462 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-20 16:38:38,519 INFO 127.0.0.1 - - [20/Jun/2021 16:38:38] "OPTIONS /login HTTP/1.1" 200 -
+2021-06-20 16:38:38,579 INFO 127.0.0.1 - - [20/Jun/2021 16:38:38] "POST /login HTTP/1.1" 200 -
+2021-06-20 16:38:51,153 INFO 127.0.0.1 - - [20/Jun/2021 16:38:51] "OPTIONS /requests HTTP/1.1" 200 -
+2021-06-20 16:38:51,207 ERROR Exception on /requests [POST]
+Traceback (most recent call last):
+  File "C:\Users\isaac\PycharmProjects\ExpenseReimbursmentProject\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\isaac\PycharmProjects\ExpenseReimbursmentProject\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\isaac\PycharmProjects\ExpenseReimbursmentProject\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\isaac\PycharmProjects\ExpenseReimbursmentProject\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\isaac\PycharmProjects\ExpenseReimbursmentProject\venv\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\isaac\PycharmProjects\ExpenseReimbursmentProject\main.py", line 58, in create_request
+    account_id = get_incoming_account_id()
+  File "C:\Users\isaac\PycharmProjects\ExpenseReimbursmentProject\main.py", line 27, in get_incoming_account_id
+    account_id: int = int(request.headers.get("accountID"))
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+2021-06-20 16:38:51,216 INFO 127.0.0.1 - - [20/Jun/2021 16:38:51] "[35m[1mPOST /requests HTTP/1.1[0m" 500 -
+2021-06-20 16:41:54,604 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-20 16:42:07,233 INFO 127.0.0.1 - - [20/Jun/2021 16:42:07] "OPTIONS /login HTTP/1.1" 200 -
+2021-06-20 16:42:07,317 INFO 127.0.0.1 - - [20/Jun/2021 16:42:07] "POST /login HTTP/1.1" 200 -
+2021-06-20 16:42:19,319 INFO 127.0.0.1 - - [20/Jun/2021 16:42:19] "OPTIONS /requests HTTP/1.1" 200 -
+2021-06-20 16:42:19,406 INFO 127.0.0.1 - - [20/Jun/2021 16:42:19] "[35m[1mPOST /requests HTTP/1.1[0m" 201 -
+2021-06-20 16:43:56,515 INFO 127.0.0.1 - - [20/Jun/2021 16:43:56] "OPTIONS /requests/all HTTP/1.1" 200 -
+2021-06-20 16:43:56,557 ERROR Exception on /requests/all [GET]
+Traceback (most recent call last):
+  File "C:\Users\isaac\PycharmProjects\ExpenseReimbursmentProject\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\isaac\PycharmProjects\ExpenseReimbursmentProject\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\isaac\PycharmProjects\ExpenseReimbursmentProject\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\isaac\PycharmProjects\ExpenseReimbursmentProject\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\isaac\PycharmProjects\ExpenseReimbursmentProject\venv\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\isaac\PycharmProjects\ExpenseReimbursmentProject\main.py", line 76, in get_user_requests
+    json_reimbursement = [r.to_json_dict() for r in reimbursement_list]
+  File "C:\Users\isaac\PycharmProjects\ExpenseReimbursmentProject\main.py", line 76, in <listcomp>
+    json_reimbursement = [r.to_json_dict() for r in reimbursement_list]
+AttributeError: 'ReimbursementRequest' object has no attribute 'to_json_dict'
+2021-06-20 16:43:56,563 INFO 127.0.0.1 - - [20/Jun/2021 16:43:56] "[35m[1mGET /requests/all HTTP/1.1[0m" 500 -
+2021-06-20 16:45:23,710 INFO 127.0.0.1 - - [20/Jun/2021 16:45:23] "OPTIONS /requests/all HTTP/1.1" 200 -
+2021-06-20 16:45:23,745 ERROR Exception on /requests/all [GET]
+Traceback (most recent call last):
+  File "C:\Users\isaac\PycharmProjects\ExpenseReimbursmentProject\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\isaac\PycharmProjects\ExpenseReimbursmentProject\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\isaac\PycharmProjects\ExpenseReimbursmentProject\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\isaac\PycharmProjects\ExpenseReimbursmentProject\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\isaac\PycharmProjects\ExpenseReimbursmentProject\venv\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\isaac\PycharmProjects\ExpenseReimbursmentProject\main.py", line 76, in get_user_requests
+    json_reimbursement = [r.to_json_dict() for r in reimbursement_list]
+  File "C:\Users\isaac\PycharmProjects\ExpenseReimbursmentProject\main.py", line 76, in <listcomp>
+    json_reimbursement = [r.to_json_dict() for r in reimbursement_list]
+AttributeError: 'ReimbursementRequest' object has no attribute 'to_json_dict'
+2021-06-20 16:45:23,748 INFO 127.0.0.1 - - [20/Jun/2021 16:45:23] "[35m[1mGET /requests/all HTTP/1.1[0m" 500 -
+2021-06-20 16:46:19,859 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-20 16:46:34,115 INFO 127.0.0.1 - - [20/Jun/2021 16:46:34] "OPTIONS /login HTTP/1.1" 200 -
+2021-06-20 16:46:34,189 INFO 127.0.0.1 - - [20/Jun/2021 16:46:34] "POST /login HTTP/1.1" 200 -
+2021-06-20 16:46:34,592 INFO 127.0.0.1 - - [20/Jun/2021 16:46:34] "OPTIONS /requests/all HTTP/1.1" 200 -
+2021-06-20 16:46:34,626 ERROR Exception on /requests/all [GET]
+Traceback (most recent call last):
+  File "C:\Users\isaac\PycharmProjects\ExpenseReimbursmentProject\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\isaac\PycharmProjects\ExpenseReimbursmentProject\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\isaac\PycharmProjects\ExpenseReimbursmentProject\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\isaac\PycharmProjects\ExpenseReimbursmentProject\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\isaac\PycharmProjects\ExpenseReimbursmentProject\venv\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\isaac\PycharmProjects\ExpenseReimbursmentProject\main.py", line 76, in get_user_requests
+    json_reimbursement = [r.to_json_dict() for r in reimbursement_list]
+  File "C:\Users\isaac\PycharmProjects\ExpenseReimbursmentProject\main.py", line 76, in <listcomp>
+    json_reimbursement = [r.to_json_dict() for r in reimbursement_list]
+AttributeError: 'ReimbursementRequest' object has no attribute 'to_json_dict'
+2021-06-20 16:46:34,631 INFO 127.0.0.1 - - [20/Jun/2021 16:46:34] "[35m[1mGET /requests/all HTTP/1.1[0m" 500 -
+2021-06-20 16:50:35,922 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-20 16:50:44,881 INFO 127.0.0.1 - - [20/Jun/2021 16:50:44] "OPTIONS /login HTTP/1.1" 200 -
+2021-06-20 16:50:44,958 INFO 127.0.0.1 - - [20/Jun/2021 16:50:44] "POST /login HTTP/1.1" 200 -
+2021-06-20 16:50:45,394 INFO 127.0.0.1 - - [20/Jun/2021 16:50:45] "OPTIONS /requests/all HTTP/1.1" 200 -
+2021-06-20 16:50:45,432 ERROR Exception on /requests/all [GET]
+Traceback (most recent call last):
+  File "C:\Users\isaac\PycharmProjects\ExpenseReimbursmentProject\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\isaac\PycharmProjects\ExpenseReimbursmentProject\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\isaac\PycharmProjects\ExpenseReimbursmentProject\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\isaac\PycharmProjects\ExpenseReimbursmentProject\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\isaac\PycharmProjects\ExpenseReimbursmentProject\venv\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\isaac\PycharmProjects\ExpenseReimbursmentProject\main.py", line 76, in get_user_requests
+    json_reimbursement = [r.to_json_dict() for r in reimbursement_list]
+  File "C:\Users\isaac\PycharmProjects\ExpenseReimbursmentProject\main.py", line 76, in <listcomp>
+    json_reimbursement = [r.to_json_dict() for r in reimbursement_list]
+AttributeError: 'ReimbursementRequest' object has no attribute 'to_json_dict'
+2021-06-20 16:50:45,436 INFO 127.0.0.1 - - [20/Jun/2021 16:50:45] "[35m[1mGET /requests/all HTTP/1.1[0m" 500 -
+2021-06-20 16:52:34,713 ERROR Exception on /requests/all [GET]
+Traceback (most recent call last):
+  File "C:\Users\isaac\PycharmProjects\ExpenseReimbursmentProject\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\isaac\PycharmProjects\ExpenseReimbursmentProject\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\isaac\PycharmProjects\ExpenseReimbursmentProject\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\isaac\PycharmProjects\ExpenseReimbursmentProject\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\isaac\PycharmProjects\ExpenseReimbursmentProject\venv\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\isaac\PycharmProjects\ExpenseReimbursmentProject\main.py", line 74, in get_user_requests
+    account_id = get_incoming_account_id()
+  File "C:\Users\isaac\PycharmProjects\ExpenseReimbursmentProject\main.py", line 27, in get_incoming_account_id
+    account_id: int = int(request.headers.get("accountID"))
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+2021-06-20 16:52:34,715 INFO 127.0.0.1 - - [20/Jun/2021 16:52:34] "[35m[1mGET /requests/all HTTP/1.1[0m" 500 -
+2021-06-20 16:53:34,351 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-20 16:53:38,318 ERROR Exception on /requests/all [GET]
+Traceback (most recent call last):
+  File "C:\Users\isaac\PycharmProjects\ExpenseReimbursmentProject\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\isaac\PycharmProjects\ExpenseReimbursmentProject\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\isaac\PycharmProjects\ExpenseReimbursmentProject\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\isaac\PycharmProjects\ExpenseReimbursmentProject\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\isaac\PycharmProjects\ExpenseReimbursmentProject\venv\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\isaac\PycharmProjects\ExpenseReimbursmentProject\main.py", line 74, in get_user_requests
+    account_id = get_incoming_account_id()
+  File "C:\Users\isaac\PycharmProjects\ExpenseReimbursmentProject\main.py", line 27, in get_incoming_account_id
+    account_id: int = int(request.headers.get("accountID"))
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+2021-06-20 16:53:38,328 INFO 127.0.0.1 - - [20/Jun/2021 16:53:38] "[35m[1mGET /requests/all HTTP/1.1[0m" 500 -
+2021-06-20 16:54:04,239 INFO 127.0.0.1 - - [20/Jun/2021 16:54:04] "OPTIONS /login HTTP/1.1" 200 -
+2021-06-20 16:54:04,313 INFO 127.0.0.1 - - [20/Jun/2021 16:54:04] "POST /login HTTP/1.1" 200 -
+2021-06-20 16:54:04,747 INFO 127.0.0.1 - - [20/Jun/2021 16:54:04] "OPTIONS /requests/all HTTP/1.1" 200 -
+2021-06-20 16:54:04,805 INFO 127.0.0.1 - - [20/Jun/2021 16:54:04] "GET /requests/all HTTP/1.1" 200 -
+2021-06-20 17:39:41,862 INFO 127.0.0.1 - - [20/Jun/2021 17:39:41] "OPTIONS /requests/all HTTP/1.1" 200 -
+2021-06-20 17:39:42,059 INFO 127.0.0.1 - - [20/Jun/2021 17:39:42] "GET /requests/all HTTP/1.1" 200 -
+2021-06-20 17:41:37,237 INFO 127.0.0.1 - - [20/Jun/2021 17:41:37] "OPTIONS /requests/all HTTP/1.1" 200 -
+2021-06-20 17:41:37,260 INFO 127.0.0.1 - - [20/Jun/2021 17:41:37] "GET /requests/all HTTP/1.1" 200 -
+2021-06-20 17:43:09,813 INFO 127.0.0.1 - - [20/Jun/2021 17:43:09] "OPTIONS /requests/all HTTP/1.1" 200 -
+2021-06-20 17:43:09,849 INFO 127.0.0.1 - - [20/Jun/2021 17:43:09] "GET /requests/all HTTP/1.1" 200 -
+2021-06-20 17:43:50,155 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-20 17:44:22,643 INFO 127.0.0.1 - - [20/Jun/2021 17:44:22] "OPTIONS /login HTTP/1.1" 200 -
+2021-06-20 17:44:22,729 INFO 127.0.0.1 - - [20/Jun/2021 17:44:22] "POST /login HTTP/1.1" 200 -
+2021-06-20 17:44:23,176 INFO 127.0.0.1 - - [20/Jun/2021 17:44:23] "OPTIONS /requests/all HTTP/1.1" 200 -
+2021-06-20 17:44:23,212 INFO 127.0.0.1 - - [20/Jun/2021 17:44:23] "GET /requests/all HTTP/1.1" 200 -
+2021-06-20 17:44:34,545 INFO 127.0.0.1 - - [20/Jun/2021 17:44:34] "OPTIONS /requests HTTP/1.1" 200 -
+2021-06-20 17:44:34,630 INFO 127.0.0.1 - - [20/Jun/2021 17:44:34] "[35m[1mPOST /requests HTTP/1.1[0m" 201 -
+2021-06-20 17:44:35,045 INFO 127.0.0.1 - - [20/Jun/2021 17:44:35] "OPTIONS /requests/all HTTP/1.1" 200 -
+2021-06-20 17:44:35,096 INFO 127.0.0.1 - - [20/Jun/2021 17:44:35] "GET /requests/all HTTP/1.1" 200 -
+2021-06-20 17:44:53,094 INFO 127.0.0.1 - - [20/Jun/2021 17:44:53] "OPTIONS /requests HTTP/1.1" 200 -
+2021-06-20 17:44:53,171 INFO 127.0.0.1 - - [20/Jun/2021 17:44:53] "[35m[1mPOST /requests HTTP/1.1[0m" 201 -
+2021-06-20 17:44:53,619 INFO 127.0.0.1 - - [20/Jun/2021 17:44:53] "OPTIONS /requests/all HTTP/1.1" 200 -
+2021-06-20 17:44:53,675 INFO 127.0.0.1 - - [20/Jun/2021 17:44:53] "GET /requests/all HTTP/1.1" 200 -
+2021-06-20 17:45:04,253 INFO 127.0.0.1 - - [20/Jun/2021 17:45:04] "OPTIONS /requests HTTP/1.1" 200 -
+2021-06-20 17:45:04,322 INFO 127.0.0.1 - - [20/Jun/2021 17:45:04] "[35m[1mPOST /requests HTTP/1.1[0m" 201 -
+2021-06-20 17:45:04,841 INFO 127.0.0.1 - - [20/Jun/2021 17:45:04] "OPTIONS /requests/all HTTP/1.1" 200 -
+2021-06-20 17:45:04,899 INFO 127.0.0.1 - - [20/Jun/2021 17:45:04] "GET /requests/all HTTP/1.1" 200 -
+2021-06-20 17:46:09,540 INFO 127.0.0.1 - - [20/Jun/2021 17:46:09] "OPTIONS /requests/all HTTP/1.1" 200 -
+2021-06-20 17:46:09,595 INFO 127.0.0.1 - - [20/Jun/2021 17:46:09] "GET /requests/all HTTP/1.1" 200 -
+2021-06-20 17:46:41,816 INFO 127.0.0.1 - - [20/Jun/2021 17:46:41] "OPTIONS /requests/all HTTP/1.1" 200 -
+2021-06-20 17:46:41,861 INFO 127.0.0.1 - - [20/Jun/2021 17:46:41] "GET /requests/all HTTP/1.1" 200 -
+2021-06-20 17:47:56,651 INFO 127.0.0.1 - - [20/Jun/2021 17:47:56] "OPTIONS /requests/all HTTP/1.1" 200 -
+2021-06-20 17:47:56,693 INFO 127.0.0.1 - - [20/Jun/2021 17:47:56] "GET /requests/all HTTP/1.1" 200 -
+2021-06-20 18:21:59,131 INFO 127.0.0.1 - - [20/Jun/2021 18:21:59] "OPTIONS /requests/all HTTP/1.1" 200 -
+2021-06-20 18:21:59,186 INFO 127.0.0.1 - - [20/Jun/2021 18:21:59] "GET /requests/all HTTP/1.1" 200 -
+2021-06-20 18:24:57,016 INFO 127.0.0.1 - - [20/Jun/2021 18:24:57] "OPTIONS /requests/all HTTP/1.1" 200 -
+2021-06-20 18:24:57,052 INFO 127.0.0.1 - - [20/Jun/2021 18:24:57] "GET /requests/all HTTP/1.1" 200 -
+2021-06-20 18:26:03,858 INFO 127.0.0.1 - - [20/Jun/2021 18:26:03] "OPTIONS /requests/all HTTP/1.1" 200 -
+2021-06-20 18:26:03,912 INFO 127.0.0.1 - - [20/Jun/2021 18:26:03] "GET /requests/all HTTP/1.1" 200 -
+2021-06-20 18:26:45,387 INFO 127.0.0.1 - - [20/Jun/2021 18:26:45] "OPTIONS /requests/all HTTP/1.1" 200 -
+2021-06-20 18:26:45,445 INFO 127.0.0.1 - - [20/Jun/2021 18:26:45] "GET /requests/all HTTP/1.1" 200 -
+2021-06-20 18:27:31,364 INFO 127.0.0.1 - - [20/Jun/2021 18:27:31] "OPTIONS /requests HTTP/1.1" 200 -
+2021-06-20 18:27:31,441 INFO 127.0.0.1 - - [20/Jun/2021 18:27:31] "[35m[1mPOST /requests HTTP/1.1[0m" 201 -
+2021-06-20 18:27:31,886 INFO 127.0.0.1 - - [20/Jun/2021 18:27:31] "OPTIONS /requests/all HTTP/1.1" 200 -
+2021-06-20 18:27:31,949 INFO 127.0.0.1 - - [20/Jun/2021 18:27:31] "GET /requests/all HTTP/1.1" 200 -
+2021-06-20 18:56:34,132 INFO 127.0.0.1 - - [20/Jun/2021 18:56:34] "OPTIONS /requests/all HTTP/1.1" 200 -
+2021-06-20 18:56:34,181 INFO 127.0.0.1 - - [20/Jun/2021 18:56:34] "GET /requests/all HTTP/1.1" 200 -
+2021-06-20 18:57:09,502 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-20 18:57:16,586 INFO 127.0.0.1 - - [20/Jun/2021 18:57:16] "OPTIONS /requests/all HTTP/1.1" 200 -
+2021-06-20 18:57:25,506 INFO 127.0.0.1 - - [20/Jun/2021 18:57:25] "OPTIONS /login HTTP/1.1" 200 -
+2021-06-20 18:57:25,591 INFO 127.0.0.1 - - [20/Jun/2021 18:57:25] "POST /login HTTP/1.1" 200 -
+2021-06-20 18:57:26,020 INFO 127.0.0.1 - - [20/Jun/2021 18:57:26] "OPTIONS /requests/all HTTP/1.1" 200 -
+2021-06-20 18:57:26,057 INFO 127.0.0.1 - - [20/Jun/2021 18:57:26] "GET /requests/all HTTP/1.1" 200 -
+2021-06-20 18:58:19,761 INFO 127.0.0.1 - - [20/Jun/2021 18:58:19] "OPTIONS /requests/all HTTP/1.1" 200 -
+2021-06-20 18:58:19,848 INFO 127.0.0.1 - - [20/Jun/2021 18:58:19] "GET /requests/all HTTP/1.1" 200 -
+2021-06-20 18:58:22,261 INFO 127.0.0.1 - - [20/Jun/2021 18:58:22] "GET /requests/all HTTP/1.1" 200 -
+2021-06-20 18:59:32,928 INFO 127.0.0.1 - - [20/Jun/2021 18:59:32] "OPTIONS /requests/all HTTP/1.1" 200 -
+2021-06-20 18:59:32,978 INFO 127.0.0.1 - - [20/Jun/2021 18:59:32] "GET /requests/all HTTP/1.1" 200 -
+2021-06-20 19:01:16,353 INFO 127.0.0.1 - - [20/Jun/2021 19:01:16] "OPTIONS /requests/all HTTP/1.1" 200 -
+2021-06-20 19:01:16,412 INFO 127.0.0.1 - - [20/Jun/2021 19:01:16] "GET /requests/all HTTP/1.1" 200 -
+2021-06-20 19:02:18,212 INFO 127.0.0.1 - - [20/Jun/2021 19:02:18] "OPTIONS /requests/all HTTP/1.1" 200 -
+2021-06-20 19:02:18,299 INFO 127.0.0.1 - - [20/Jun/2021 19:02:18] "GET /requests/all HTTP/1.1" 200 -
+2021-06-20 19:02:57,201 INFO 127.0.0.1 - - [20/Jun/2021 19:02:57] "OPTIONS /requests/all HTTP/1.1" 200 -
+2021-06-20 19:02:57,274 INFO 127.0.0.1 - - [20/Jun/2021 19:02:57] "GET /requests/all HTTP/1.1" 200 -
+2021-06-20 19:04:01,333 INFO 127.0.0.1 - - [20/Jun/2021 19:04:01] "OPTIONS /logout HTTP/1.1" 200 -
+2021-06-20 19:04:01,382 INFO 127.0.0.1 - - [20/Jun/2021 19:04:01] "POST /logout HTTP/1.1" 200 -
+2021-06-20 19:04:19,238 INFO 127.0.0.1 - - [20/Jun/2021 19:04:19] "OPTIONS /login HTTP/1.1" 200 -
+2021-06-20 19:04:19,284 INFO 127.0.0.1 - - [20/Jun/2021 19:04:19] "POST /login HTTP/1.1" 200 -
+2021-06-20 19:43:46,244 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-20 19:43:57,820 INFO 127.0.0.1 - - [20/Jun/2021 19:43:57] "OPTIONS /login HTTP/1.1" 200 -
+2021-06-20 19:43:57,903 INFO 127.0.0.1 - - [20/Jun/2021 19:43:57] "POST /login HTTP/1.1" 200 -
+2021-06-20 19:44:41,943 INFO 127.0.0.1 - - [20/Jun/2021 19:44:41] "OPTIONS /requests/all HTTP/1.1" 200 -
+2021-06-20 19:44:41,985 INFO 127.0.0.1 - - [20/Jun/2021 19:44:41] "GET /requests/all HTTP/1.1" 200 -
+2021-06-20 19:54:17,280 INFO 127.0.0.1 - - [20/Jun/2021 19:54:17] "OPTIONS /requests/all HTTP/1.1" 200 -
+2021-06-20 19:54:17,318 INFO 127.0.0.1 - - [20/Jun/2021 19:54:17] "GET /requests/all HTTP/1.1" 200 -
+2021-06-20 19:57:26,642 INFO 127.0.0.1 - - [20/Jun/2021 19:57:26] "OPTIONS /requests/all HTTP/1.1" 200 -
+2021-06-20 19:57:26,684 INFO 127.0.0.1 - - [20/Jun/2021 19:57:26] "GET /requests/all HTTP/1.1" 200 -
+2021-06-20 19:58:06,931 INFO 127.0.0.1 - - [20/Jun/2021 19:58:06] "OPTIONS /requests/all HTTP/1.1" 200 -
+2021-06-20 19:58:06,958 INFO 127.0.0.1 - - [20/Jun/2021 19:58:06] "GET /requests/all HTTP/1.1" 200 -
+2021-06-20 19:58:43,127 INFO 127.0.0.1 - - [20/Jun/2021 19:58:43] "OPTIONS /requests/all HTTP/1.1" 200 -
+2021-06-20 19:58:43,162 INFO 127.0.0.1 - - [20/Jun/2021 19:58:43] "GET /requests/all HTTP/1.1" 200 -
+2021-06-20 20:00:23,635 INFO 127.0.0.1 - - [20/Jun/2021 20:00:23] "OPTIONS /requests/all HTTP/1.1" 200 -
+2021-06-20 20:00:23,680 INFO 127.0.0.1 - - [20/Jun/2021 20:00:23] "GET /requests/all HTTP/1.1" 200 -
+2021-06-20 20:03:54,203 INFO 127.0.0.1 - - [20/Jun/2021 20:03:54] "OPTIONS /requests/all HTTP/1.1" 200 -
+2021-06-20 20:03:54,233 INFO 127.0.0.1 - - [20/Jun/2021 20:03:54] "GET /requests/all HTTP/1.1" 200 -
+2021-06-20 20:04:28,385 INFO 127.0.0.1 - - [20/Jun/2021 20:04:28] "OPTIONS /requests/all HTTP/1.1" 200 -
+2021-06-20 20:04:28,443 INFO 127.0.0.1 - - [20/Jun/2021 20:04:28] "GET /requests/all HTTP/1.1" 200 -
+2021-06-20 20:06:11,009 INFO 127.0.0.1 - - [20/Jun/2021 20:06:11] "OPTIONS /requests/all HTTP/1.1" 200 -
+2021-06-20 20:06:11,038 INFO 127.0.0.1 - - [20/Jun/2021 20:06:11] "GET /requests/all HTTP/1.1" 200 -
+2021-06-20 20:06:39,756 INFO 127.0.0.1 - - [20/Jun/2021 20:06:39] "OPTIONS /requests/all HTTP/1.1" 200 -
+2021-06-20 20:06:39,821 INFO 127.0.0.1 - - [20/Jun/2021 20:06:39] "GET /requests/all HTTP/1.1" 200 -
+2021-06-20 20:08:06,781 INFO 127.0.0.1 - - [20/Jun/2021 20:08:06] "OPTIONS /requests/all HTTP/1.1" 200 -
+2021-06-20 20:08:06,816 INFO 127.0.0.1 - - [20/Jun/2021 20:08:06] "GET /requests/all HTTP/1.1" 200 -
+2021-06-20 20:09:12,955 INFO 127.0.0.1 - - [20/Jun/2021 20:09:12] "OPTIONS /requests/all HTTP/1.1" 200 -
+2021-06-20 20:09:12,985 INFO 127.0.0.1 - - [20/Jun/2021 20:09:12] "GET /requests/all HTTP/1.1" 200 -
+2021-06-20 20:37:10,945 INFO 127.0.0.1 - - [20/Jun/2021 20:37:10] "OPTIONS /requests/all HTTP/1.1" 200 -
+2021-06-20 20:37:11,023 INFO 127.0.0.1 - - [20/Jun/2021 20:37:11] "GET /requests/all HTTP/1.1" 200 -
+2021-06-20 20:43:42,299 INFO 127.0.0.1 - - [20/Jun/2021 20:43:42] "OPTIONS /requests/all HTTP/1.1" 200 -
+2021-06-20 20:43:42,344 INFO 127.0.0.1 - - [20/Jun/2021 20:43:42] "GET /requests/all HTTP/1.1" 200 -
+2021-06-20 20:53:55,386 INFO 127.0.0.1 - - [20/Jun/2021 20:53:55] "OPTIONS /requests/all HTTP/1.1" 200 -
+2021-06-20 20:53:55,428 INFO 127.0.0.1 - - [20/Jun/2021 20:53:55] "GET /requests/all HTTP/1.1" 200 -
+2021-06-20 20:54:59,637 INFO 127.0.0.1 - - [20/Jun/2021 20:54:59] "OPTIONS /requests/all HTTP/1.1" 200 -
+2021-06-20 20:54:59,678 INFO 127.0.0.1 - - [20/Jun/2021 20:54:59] "GET /requests/all HTTP/1.1" 200 -
+2021-06-20 20:58:40,700 INFO 127.0.0.1 - - [20/Jun/2021 20:58:40] "OPTIONS /requests/all HTTP/1.1" 200 -
+2021-06-20 20:58:40,745 INFO 127.0.0.1 - - [20/Jun/2021 20:58:40] "GET /requests/all HTTP/1.1" 200 -
+2021-06-20 21:07:01,392 INFO 127.0.0.1 - - [20/Jun/2021 21:07:01] "OPTIONS /requests/all HTTP/1.1" 200 -
+2021-06-20 21:07:01,454 INFO 127.0.0.1 - - [20/Jun/2021 21:07:01] "GET /requests/all HTTP/1.1" 200 -
+2021-06-20 21:41:59,729 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-20 21:42:08,132 INFO 127.0.0.1 - - [20/Jun/2021 21:42:08] "OPTIONS /requests/user HTTP/1.1" 200 -
+2021-06-20 21:42:08,171 INFO 127.0.0.1 - - [20/Jun/2021 21:42:08] "[31m[1mGET /requests/user HTTP/1.1[0m" 403 -
+2021-06-20 21:42:15,910 INFO 127.0.0.1 - - [20/Jun/2021 21:42:15] "OPTIONS /login HTTP/1.1" 200 -
+2021-06-20 21:42:15,989 INFO 127.0.0.1 - - [20/Jun/2021 21:42:15] "POST /login HTTP/1.1" 200 -
+2021-06-20 21:42:16,434 INFO 127.0.0.1 - - [20/Jun/2021 21:42:16] "OPTIONS /requests/all HTTP/1.1" 200 -
+2021-06-20 21:42:16,483 INFO 127.0.0.1 - - [20/Jun/2021 21:42:16] "GET /requests/all HTTP/1.1" 200 -
+2021-06-20 22:16:29,275 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-20 22:16:38,860 INFO 127.0.0.1 - - [20/Jun/2021 22:16:38] "OPTIONS /login HTTP/1.1" 200 -
+2021-06-20 22:16:38,936 INFO 127.0.0.1 - - [20/Jun/2021 22:16:38] "POST /login HTTP/1.1" 200 -
+2021-06-20 22:16:39,408 INFO 127.0.0.1 - - [20/Jun/2021 22:16:39] "OPTIONS /requests/all HTTP/1.1" 200 -
+2021-06-20 22:16:39,490 INFO 127.0.0.1 - - [20/Jun/2021 22:16:39] "GET /requests/all HTTP/1.1" 200 -
+2021-06-20 22:17:47,774 INFO 127.0.0.1 - - [20/Jun/2021 22:17:47] "OPTIONS /requests/all HTTP/1.1" 200 -
+2021-06-20 22:17:47,832 INFO 127.0.0.1 - - [20/Jun/2021 22:17:47] "GET /requests/all HTTP/1.1" 200 -
+2021-06-20 22:18:03,722 INFO 127.0.0.1 - - [20/Jun/2021 22:18:03] "OPTIONS /requests/update HTTP/1.1" 200 -
+2021-06-20 22:18:03,750 INFO 127.0.0.1 - - [20/Jun/2021 22:18:03] "[31m[1mPUT /requests/update HTTP/1.1[0m" 400 -
+2021-06-20 22:24:18,584 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-20 22:25:24,451 INFO 127.0.0.1 - - [20/Jun/2021 22:25:24] "OPTIONS /login HTTP/1.1" 200 -
+2021-06-20 22:25:24,504 INFO 127.0.0.1 - - [20/Jun/2021 22:25:24] "POST /login HTTP/1.1" 200 -
+2021-06-20 22:25:24,965 INFO 127.0.0.1 - - [20/Jun/2021 22:25:24] "OPTIONS /requests/all HTTP/1.1" 200 -
+2021-06-20 22:25:25,035 INFO 127.0.0.1 - - [20/Jun/2021 22:25:25] "GET /requests/all HTTP/1.1" 200 -
+2021-06-20 22:25:40,211 INFO 127.0.0.1 - - [20/Jun/2021 22:25:40] "OPTIONS /requests/update HTTP/1.1" 200 -
+2021-06-20 22:25:40,263 INFO 127.0.0.1 - - [20/Jun/2021 22:25:40] "[31m[1mPUT /requests/update HTTP/1.1[0m" 400 -
+2021-06-20 22:26:48,442 INFO 127.0.0.1 - - [20/Jun/2021 22:26:48] "OPTIONS /requests/update HTTP/1.1" 200 -
+2021-06-20 22:30:08,156 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-20 22:30:26,495 INFO 127.0.0.1 - - [20/Jun/2021 22:30:26] "OPTIONS /login HTTP/1.1" 200 -
+2021-06-20 22:30:26,552 INFO 127.0.0.1 - - [20/Jun/2021 22:30:26] "POST /login HTTP/1.1" 200 -
+2021-06-20 22:30:27,059 INFO 127.0.0.1 - - [20/Jun/2021 22:30:27] "OPTIONS /requests/all HTTP/1.1" 200 -
+2021-06-20 22:30:27,275 INFO 127.0.0.1 - - [20/Jun/2021 22:30:27] "GET /requests/all HTTP/1.1" 200 -
+2021-06-20 22:30:36,024 INFO 127.0.0.1 - - [20/Jun/2021 22:30:36] "OPTIONS /requests/update HTTP/1.1" 200 -
+2021-06-20 22:30:36,093 INFO 127.0.0.1 - - [20/Jun/2021 22:30:36] "[31m[1mPUT /requests/update HTTP/1.1[0m" 400 -
+2021-06-20 22:32:32,772 INFO 127.0.0.1 - - [20/Jun/2021 22:32:32] "OPTIONS /login HTTP/1.1" 200 -
+2021-06-20 22:32:32,841 INFO 127.0.0.1 - - [20/Jun/2021 22:32:32] "[31m[1mPOST /login HTTP/1.1[0m" 403 -
+2021-06-20 22:32:56,377 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-20 22:33:04,640 INFO 127.0.0.1 - - [20/Jun/2021 22:33:04] "OPTIONS /login HTTP/1.1" 200 -
+2021-06-20 22:33:04,699 INFO 127.0.0.1 - - [20/Jun/2021 22:33:04] "POST /login HTTP/1.1" 200 -
+2021-06-20 22:33:05,172 INFO 127.0.0.1 - - [20/Jun/2021 22:33:05] "OPTIONS /requests/all HTTP/1.1" 200 -
+2021-06-20 22:33:05,231 INFO 127.0.0.1 - - [20/Jun/2021 22:33:05] "GET /requests/all HTTP/1.1" 200 -
+2021-06-20 22:33:14,992 INFO 127.0.0.1 - - [20/Jun/2021 22:33:14] "OPTIONS /requests/update HTTP/1.1" 200 -
+2021-06-20 22:33:15,027 INFO 127.0.0.1 - - [20/Jun/2021 22:33:15] "[31m[1mPUT /requests/update HTTP/1.1[0m" 400 -
+2021-06-20 22:36:30,188 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-20 22:36:37,808 INFO 127.0.0.1 - - [20/Jun/2021 22:36:37] "OPTIONS /login HTTP/1.1" 200 -
+2021-06-20 22:36:37,849 INFO 127.0.0.1 - - [20/Jun/2021 22:36:37] "POST /login HTTP/1.1" 200 -
+2021-06-20 22:36:38,423 INFO 127.0.0.1 - - [20/Jun/2021 22:36:38] "OPTIONS /requests/all HTTP/1.1" 200 -
+2021-06-20 22:36:38,485 INFO 127.0.0.1 - - [20/Jun/2021 22:36:38] "GET /requests/all HTTP/1.1" 200 -
+2021-06-20 22:36:46,507 INFO 127.0.0.1 - - [20/Jun/2021 22:36:46] "OPTIONS /requests/update HTTP/1.1" 200 -
+2021-06-20 22:37:21,093 ERROR Exception on /requests/update [PUT]
+Traceback (most recent call last):
+  File "C:\Users\isaac\PycharmProjects\ExpenseReimbursmentProject\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\isaac\PycharmProjects\ExpenseReimbursmentProject\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\isaac\PycharmProjects\ExpenseReimbursmentProject\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\isaac\PycharmProjects\ExpenseReimbursmentProject\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\isaac\PycharmProjects\ExpenseReimbursmentProject\venv\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:/Users/isaac/PycharmProjects/ExpenseReimbursmentProject/main.py", line 104, in update_request
+    reimbursement_service.update_request(account_id, reimbursement)
+  File "C:\Users\isaac\PycharmProjects\ExpenseReimbursmentProject\services\reimbursement_request_services_impl.py", line 40, in update_request
+    return self.reimbursement_dao.update_user_request(request)
+  File "C:\Users\isaac\PycharmProjects\ExpenseReimbursmentProject\daos\reimbursement_request_dao_postgres.py", line 54, in update_user_request
+    result = cursor.fetch()
+AttributeError: 'psycopg2.extensions.cursor' object has no attribute 'fetch'
+2021-06-20 22:37:21,161 INFO 127.0.0.1 - - [20/Jun/2021 22:37:21] "[35m[1mPUT /requests/update HTTP/1.1[0m" 500 -
+2021-06-20 22:38:45,899 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-20 22:39:03,604 INFO 127.0.0.1 - - [20/Jun/2021 22:39:03] "OPTIONS /login HTTP/1.1" 200 -
+2021-06-20 22:39:03,684 INFO 127.0.0.1 - - [20/Jun/2021 22:39:03] "POST /login HTTP/1.1" 200 -
+2021-06-20 22:39:04,109 INFO 127.0.0.1 - - [20/Jun/2021 22:39:04] "OPTIONS /requests/all HTTP/1.1" 200 -
+2021-06-20 22:39:04,801 INFO 127.0.0.1 - - [20/Jun/2021 22:39:04] "GET /requests/all HTTP/1.1" 200 -
+2021-06-20 22:39:14,007 INFO 127.0.0.1 - - [20/Jun/2021 22:39:14] "OPTIONS /requests/update HTTP/1.1" 200 -
+2021-06-20 22:41:53,761 ERROR Exception on /requests/update [PUT]
+Traceback (most recent call last):
+  File "C:\Users\isaac\PycharmProjects\ExpenseReimbursmentProject\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\isaac\PycharmProjects\ExpenseReimbursmentProject\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\isaac\PycharmProjects\ExpenseReimbursmentProject\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\isaac\PycharmProjects\ExpenseReimbursmentProject\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\isaac\PycharmProjects\ExpenseReimbursmentProject\venv\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:/Users/isaac/PycharmProjects/ExpenseReimbursmentProject/main.py", line 104, in update_request
+    reimbursement_service.update_request(account_id, reimbursement)
+  File "C:\Users\isaac\PycharmProjects\ExpenseReimbursmentProject\services\reimbursement_request_services_impl.py", line 40, in update_request
+    return self.reimbursement_dao.update_user_request(request)
+  File "C:\Users\isaac\PycharmProjects\ExpenseReimbursmentProject\daos\reimbursement_request_dao_postgres.py", line 54, in update_user_request
+    result = cursor.fetch()
+AttributeError: 'psycopg2.extensions.cursor' object has no attribute 'fetch'
+2021-06-20 22:41:53,776 INFO 127.0.0.1 - - [20/Jun/2021 22:41:53] "[35m[1mPUT /requests/update HTTP/1.1[0m" 500 -
+2021-06-20 22:42:06,116 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-20 22:42:29,378 INFO 127.0.0.1 - - [20/Jun/2021 22:42:29] "OPTIONS /login HTTP/1.1" 200 -
+2021-06-20 22:42:29,435 INFO 127.0.0.1 - - [20/Jun/2021 22:42:29] "POST /login HTTP/1.1" 200 -
+2021-06-20 22:42:29,879 INFO 127.0.0.1 - - [20/Jun/2021 22:42:29] "OPTIONS /requests/all HTTP/1.1" 200 -
+2021-06-20 22:42:29,928 INFO 127.0.0.1 - - [20/Jun/2021 22:42:29] "GET /requests/all HTTP/1.1" 200 -
+2021-06-20 22:42:52,282 INFO 127.0.0.1 - - [20/Jun/2021 22:42:52] "OPTIONS /requests/update HTTP/1.1" 200 -
+2021-06-20 22:43:37,515 INFO 127.0.0.1 - - [20/Jun/2021 22:43:37] "PUT /requests/update HTTP/1.1" 200 -
+2021-06-20 22:44:55,041 INFO 127.0.0.1 - - [20/Jun/2021 22:44:55] "OPTIONS /requests/all HTTP/1.1" 200 -
+2021-06-20 22:44:55,144 INFO 127.0.0.1 - - [20/Jun/2021 22:44:55] "GET /requests/all HTTP/1.1" 200 -
+2021-06-20 22:46:54,399 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-20 22:47:11,072 INFO 127.0.0.1 - - [20/Jun/2021 22:47:11] "OPTIONS /login HTTP/1.1" 200 -
+2021-06-20 22:47:11,156 INFO 127.0.0.1 - - [20/Jun/2021 22:47:11] "POST /login HTTP/1.1" 200 -
+2021-06-20 22:47:11,609 INFO 127.0.0.1 - - [20/Jun/2021 22:47:11] "OPTIONS /requests/all HTTP/1.1" 200 -
+2021-06-20 22:47:11,672 INFO 127.0.0.1 - - [20/Jun/2021 22:47:11] "GET /requests/all HTTP/1.1" 200 -
+2021-06-20 22:47:24,317 INFO 127.0.0.1 - - [20/Jun/2021 22:47:24] "OPTIONS /requests/update HTTP/1.1" 200 -
+2021-06-20 22:47:24,406 INFO 127.0.0.1 - - [20/Jun/2021 22:47:24] "PUT /requests/update HTTP/1.1" 200 -
+2021-06-20 22:47:45,840 INFO 127.0.0.1 - - [20/Jun/2021 22:47:45] "OPTIONS /logout HTTP/1.1" 200 -
+2021-06-20 22:47:45,875 INFO 127.0.0.1 - - [20/Jun/2021 22:47:45] "POST /logout HTTP/1.1" 200 -
+2021-06-20 22:47:57,239 INFO 127.0.0.1 - - [20/Jun/2021 22:47:57] "OPTIONS /login HTTP/1.1" 200 -
+2021-06-20 22:47:57,357 INFO 127.0.0.1 - - [20/Jun/2021 22:47:57] "POST /login HTTP/1.1" 200 -
+2021-06-20 22:47:57,821 INFO 127.0.0.1 - - [20/Jun/2021 22:47:57] "OPTIONS /requests/user HTTP/1.1" 200 -
+2021-06-20 22:47:57,860 INFO 127.0.0.1 - - [20/Jun/2021 22:47:57] "GET /requests/user HTTP/1.1" 200 -
+2021-06-20 22:55:59,300 INFO 127.0.0.1 - - [20/Jun/2021 22:55:59] "OPTIONS /requests/user HTTP/1.1" 200 -
+2021-06-20 22:55:59,344 INFO 127.0.0.1 - - [20/Jun/2021 22:55:59] "GET /requests/user HTTP/1.1" 200 -
+2021-06-20 22:57:21,743 INFO 127.0.0.1 - - [20/Jun/2021 22:57:21] "OPTIONS /logout HTTP/1.1" 200 -
+2021-06-20 22:57:21,777 INFO 127.0.0.1 - - [20/Jun/2021 22:57:21] "POST /logout HTTP/1.1" 200 -
+2021-06-20 22:57:29,088 INFO 127.0.0.1 - - [20/Jun/2021 22:57:29] "OPTIONS /login HTTP/1.1" 200 -
+2021-06-20 22:57:29,125 INFO 127.0.0.1 - - [20/Jun/2021 22:57:29] "POST /login HTTP/1.1" 200 -
+2021-06-20 22:57:29,660 INFO 127.0.0.1 - - [20/Jun/2021 22:57:29] "OPTIONS /requests/all HTTP/1.1" 200 -
+2021-06-20 22:57:29,741 INFO 127.0.0.1 - - [20/Jun/2021 22:57:29] "GET /requests/all HTTP/1.1" 200 -
+2021-06-20 23:00:41,579 INFO 127.0.0.1 - - [20/Jun/2021 23:00:41] "OPTIONS /requests/all HTTP/1.1" 200 -
+2021-06-20 23:00:41,635 INFO 127.0.0.1 - - [20/Jun/2021 23:00:41] "GET /requests/all HTTP/1.1" 200 -
+2021-06-20 23:01:49,912 INFO 127.0.0.1 - - [20/Jun/2021 23:01:49] "OPTIONS /requests/all HTTP/1.1" 200 -
+2021-06-20 23:01:49,968 INFO 127.0.0.1 - - [20/Jun/2021 23:01:49] "GET /requests/all HTTP/1.1" 200 -
+2021-06-20 23:05:31,834 INFO 127.0.0.1 - - [20/Jun/2021 23:05:31] "OPTIONS /requests/all HTTP/1.1" 200 -
+2021-06-20 23:05:31,896 INFO 127.0.0.1 - - [20/Jun/2021 23:05:31] "GET /requests/all HTTP/1.1" 200 -
+2021-06-20 23:06:47,874 INFO 127.0.0.1 - - [20/Jun/2021 23:06:47] "OPTIONS /requests/all HTTP/1.1" 200 -
+2021-06-20 23:06:47,948 INFO 127.0.0.1 - - [20/Jun/2021 23:06:47] "GET /requests/all HTTP/1.1" 200 -
+2021-06-20 23:09:53,089 INFO 127.0.0.1 - - [20/Jun/2021 23:09:53] "OPTIONS /requests/all HTTP/1.1" 200 -
+2021-06-20 23:09:53,153 INFO 127.0.0.1 - - [20/Jun/2021 23:09:53] "GET /requests/all HTTP/1.1" 200 -
+2021-06-20 23:18:42,379 INFO 127.0.0.1 - - [20/Jun/2021 23:18:42] "OPTIONS /requests/all HTTP/1.1" 200 -
+2021-06-20 23:18:42,540 INFO 127.0.0.1 - - [20/Jun/2021 23:18:42] "GET /requests/all HTTP/1.1" 200 -
+2021-06-20 23:58:58,145 INFO 127.0.0.1 - - [20/Jun/2021 23:58:58] "OPTIONS /requests/all HTTP/1.1" 200 -
+2021-06-20 23:58:58,699 INFO 127.0.0.1 - - [20/Jun/2021 23:58:58] "GET /requests/all HTTP/1.1" 200 -
+2021-06-21 00:00:15,971 INFO 127.0.0.1 - - [21/Jun/2021 00:00:15] "OPTIONS /requests/all HTTP/1.1" 200 -
+2021-06-21 00:00:16,320 INFO 127.0.0.1 - - [21/Jun/2021 00:00:16] "GET /requests/all HTTP/1.1" 200 -
+2021-06-21 00:02:32,945 INFO 127.0.0.1 - - [21/Jun/2021 00:02:32] "OPTIONS /requests/all HTTP/1.1" 200 -
+2021-06-21 00:02:33,149 INFO 127.0.0.1 - - [21/Jun/2021 00:02:33] "GET /requests/all HTTP/1.1" 200 -
+2021-06-21 00:21:54,550 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-21 00:25:43,113 INFO 127.0.0.1 - - [21/Jun/2021 00:25:43] "OPTIONS /login HTTP/1.1" 200 -
+2021-06-21 00:25:43,947 INFO 127.0.0.1 - - [21/Jun/2021 00:25:43] "[31m[1mPOST /login HTTP/1.1[0m" 400 -
+2021-06-21 00:25:46,970 INFO 127.0.0.1 - - [21/Jun/2021 00:25:46] "[31m[1mPOST /login HTTP/1.1[0m" 400 -
+2021-06-21 00:25:48,324 INFO 127.0.0.1 - - [21/Jun/2021 00:25:48] "OPTIONS /login HTTP/1.1" 200 -
+2021-06-21 00:25:48,741 INFO 127.0.0.1 - - [21/Jun/2021 00:25:48] "[31m[1mPOST /login HTTP/1.1[0m" 400 -
+2021-06-21 00:26:03,108 INFO 127.0.0.1 - - [21/Jun/2021 00:26:03] "OPTIONS /login HTTP/1.1" 200 -
+2021-06-21 00:26:03,504 INFO 127.0.0.1 - - [21/Jun/2021 00:26:03] "POST /login HTTP/1.1" 200 -
+2021-06-21 00:26:03,943 INFO 127.0.0.1 - - [21/Jun/2021 00:26:03] "OPTIONS /requests/all HTTP/1.1" 200 -
+2021-06-21 00:26:04,141 INFO 127.0.0.1 - - [21/Jun/2021 00:26:04] "GET /requests/all HTTP/1.1" 200 -
+2021-06-21 00:26:07,002 INFO 127.0.0.1 - - [21/Jun/2021 00:26:07] "GET /requests/all HTTP/1.1" 200 -
+2021-06-21 00:42:44,566 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-21 00:43:09,042 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-21 00:43:15,813 INFO 127.0.0.1 - - [21/Jun/2021 00:43:15] "OPTIONS /login HTTP/1.1" 200 -
+2021-06-21 00:43:16,231 INFO 127.0.0.1 - - [21/Jun/2021 00:43:16] "POST /login HTTP/1.1" 200 -
+2021-06-21 00:43:16,704 INFO 127.0.0.1 - - [21/Jun/2021 00:43:16] "OPTIONS /requests/all HTTP/1.1" 200 -
+2021-06-21 00:43:16,782 INFO 127.0.0.1 - - [21/Jun/2021 00:43:16] "GET /requests/all HTTP/1.1" 200 -
+2021-06-21 00:43:20,813 INFO 127.0.0.1 - - [21/Jun/2021 00:43:20] "GET /requests/all HTTP/1.1" 200 -
+2021-06-21 00:44:03,426 INFO 127.0.0.1 - - [21/Jun/2021 00:44:03] "OPTIONS /requests/all HTTP/1.1" 200 -
+2021-06-21 00:44:03,629 INFO 127.0.0.1 - - [21/Jun/2021 00:44:03] "GET /requests/all HTTP/1.1" 200 -
+2021-06-21 00:44:03,828 INFO 127.0.0.1 - - [21/Jun/2021 00:44:03] "OPTIONS /account/1 HTTP/1.1" 200 -
+2021-06-21 00:44:04,427 INFO 127.0.0.1 - - [21/Jun/2021 00:44:04] "GET /account/1 HTTP/1.1" 200 -
+2021-06-21 00:45:35,638 INFO 127.0.0.1 - - [21/Jun/2021 00:45:35] "OPTIONS /requests/all HTTP/1.1" 200 -
+2021-06-21 00:45:35,751 INFO 127.0.0.1 - - [21/Jun/2021 00:45:35] "GET /requests/all HTTP/1.1" 200 -
+2021-06-21 00:45:35,979 INFO 127.0.0.1 - - [21/Jun/2021 00:45:35] "OPTIONS /account/1 HTTP/1.1" 200 -
+2021-06-21 00:45:36,152 INFO 127.0.0.1 - - [21/Jun/2021 00:45:36] "GET /account/1 HTTP/1.1" 200 -
+2021-06-21 00:48:00,266 INFO 127.0.0.1 - - [21/Jun/2021 00:48:00] "OPTIONS /requests/all HTTP/1.1" 200 -
+2021-06-21 00:48:00,633 INFO 127.0.0.1 - - [21/Jun/2021 00:48:00] "GET /requests/all HTTP/1.1" 200 -
+2021-06-21 00:48:00,708 INFO 127.0.0.1 - - [21/Jun/2021 00:48:00] "OPTIONS /account/1 HTTP/1.1" 200 -
+2021-06-21 00:48:01,029 INFO 127.0.0.1 - - [21/Jun/2021 00:48:01] "GET /account/1 HTTP/1.1" 200 -
+2021-06-21 00:48:17,918 INFO 127.0.0.1 - - [21/Jun/2021 00:48:17] "OPTIONS /requests/all HTTP/1.1" 200 -
+2021-06-21 00:48:18,360 INFO 127.0.0.1 - - [21/Jun/2021 00:48:18] "GET /requests/all HTTP/1.1" 200 -
+2021-06-21 00:48:18,471 INFO 127.0.0.1 - - [21/Jun/2021 00:48:18] "OPTIONS /account/1 HTTP/1.1" 200 -
+2021-06-21 00:48:19,114 INFO 127.0.0.1 - - [21/Jun/2021 00:48:19] "GET /account/1 HTTP/1.1" 200 -
+2021-06-21 00:48:30,605 INFO 127.0.0.1 - - [21/Jun/2021 00:48:30] "OPTIONS /requests/all HTTP/1.1" 200 -
+2021-06-21 00:48:31,104 INFO 127.0.0.1 - - [21/Jun/2021 00:48:31] "GET /requests/all HTTP/1.1" 200 -
+2021-06-21 00:48:31,162 INFO 127.0.0.1 - - [21/Jun/2021 00:48:31] "OPTIONS /account/1 HTTP/1.1" 200 -
+2021-06-21 00:48:31,489 INFO 127.0.0.1 - - [21/Jun/2021 00:48:31] "GET /account/1 HTTP/1.1" 200 -
+2021-06-21 00:49:02,842 INFO 127.0.0.1 - - [21/Jun/2021 00:49:02] "OPTIONS /requests/all HTTP/1.1" 200 -
+2021-06-21 00:49:03,286 INFO 127.0.0.1 - - [21/Jun/2021 00:49:03] "GET /requests/all HTTP/1.1" 200 -
+2021-06-21 00:49:03,408 INFO 127.0.0.1 - - [21/Jun/2021 00:49:03] "OPTIONS /account/1 HTTP/1.1" 200 -
+2021-06-21 00:49:03,720 INFO 127.0.0.1 - - [21/Jun/2021 00:49:03] "GET /account/1 HTTP/1.1" 200 -
+2021-06-21 00:52:07,443 INFO 127.0.0.1 - - [21/Jun/2021 00:52:07] "OPTIONS /requests/all HTTP/1.1" 200 -
+2021-06-21 00:52:07,629 INFO 127.0.0.1 - - [21/Jun/2021 00:52:07] "GET /requests/all HTTP/1.1" 200 -
+2021-06-21 00:52:07,845 INFO 127.0.0.1 - - [21/Jun/2021 00:52:07] "OPTIONS /account/1 HTTP/1.1" 200 -
+2021-06-21 00:52:07,981 INFO 127.0.0.1 - - [21/Jun/2021 00:52:07] "GET /account/1 HTTP/1.1" 200 -
+2021-06-21 00:53:59,113 INFO 127.0.0.1 - - [21/Jun/2021 00:53:59] "OPTIONS /requests/all HTTP/1.1" 200 -
+2021-06-21 00:53:59,563 INFO 127.0.0.1 - - [21/Jun/2021 00:53:59] "GET /requests/all HTTP/1.1" 200 -
+2021-06-21 00:53:59,643 INFO 127.0.0.1 - - [21/Jun/2021 00:53:59] "OPTIONS /account/1 HTTP/1.1" 200 -
+2021-06-21 00:53:59,740 INFO 127.0.0.1 - - [21/Jun/2021 00:53:59] "GET /account/1 HTTP/1.1" 200 -
+2021-06-21 01:00:34,741 INFO 127.0.0.1 - - [21/Jun/2021 01:00:34] "OPTIONS /requests/all HTTP/1.1" 200 -
+2021-06-21 01:00:34,764 INFO 127.0.0.1 - - [21/Jun/2021 01:00:34] "GET /requests/all HTTP/1.1" 200 -
+2021-06-21 01:00:34,983 INFO 127.0.0.1 - - [21/Jun/2021 01:00:34] "OPTIONS /account/1 HTTP/1.1" 200 -
+2021-06-21 01:00:35,211 INFO 127.0.0.1 - - [21/Jun/2021 01:00:35] "GET /account/1 HTTP/1.1" 200 -
+2021-06-21 01:02:03,597 INFO 127.0.0.1 - - [21/Jun/2021 01:02:03] "OPTIONS /requests/all HTTP/1.1" 200 -
+2021-06-21 01:02:03,662 INFO 127.0.0.1 - - [21/Jun/2021 01:02:03] "GET /requests/all HTTP/1.1" 200 -
+2021-06-21 01:02:03,821 INFO 127.0.0.1 - - [21/Jun/2021 01:02:03] "OPTIONS /account/1 HTTP/1.1" 200 -
+2021-06-21 01:02:04,011 INFO 127.0.0.1 - - [21/Jun/2021 01:02:04] "GET /account/1 HTTP/1.1" 200 -
+2021-06-21 01:04:01,738 INFO 127.0.0.1 - - [21/Jun/2021 01:04:01] "OPTIONS /requests/all HTTP/1.1" 200 -
+2021-06-21 01:04:19,942 INFO 127.0.0.1 - - [21/Jun/2021 01:04:19] "OPTIONS /login HTTP/1.1" 200 -
+2021-06-21 01:04:20,059 INFO 127.0.0.1 - - [21/Jun/2021 01:04:20] "POST /login HTTP/1.1" 200 -
+2021-06-21 01:04:20,538 INFO 127.0.0.1 - - [21/Jun/2021 01:04:20] "OPTIONS /requests/user HTTP/1.1" 200 -
+2021-06-21 01:04:20,590 INFO 127.0.0.1 - - [21/Jun/2021 01:04:20] "GET /requests/user HTTP/1.1" 200 -
+2021-06-21 01:04:43,303 INFO 127.0.0.1 - - [21/Jun/2021 01:04:43] "OPTIONS /requests HTTP/1.1" 200 -
+2021-06-21 01:04:43,381 INFO 127.0.0.1 - - [21/Jun/2021 01:04:43] "[35m[1mPOST /requests HTTP/1.1[0m" 201 -
+2021-06-21 01:04:43,898 INFO 127.0.0.1 - - [21/Jun/2021 01:04:43] "OPTIONS /requests/user HTTP/1.1" 200 -
+2021-06-21 01:04:43,959 INFO 127.0.0.1 - - [21/Jun/2021 01:04:43] "GET /requests/user HTTP/1.1" 200 -
+2021-06-21 01:04:50,510 INFO 127.0.0.1 - - [21/Jun/2021 01:04:50] "OPTIONS /logout HTTP/1.1" 200 -
+2021-06-21 01:04:50,532 INFO 127.0.0.1 - - [21/Jun/2021 01:04:50] "POST /logout HTTP/1.1" 200 -
+2021-06-21 01:04:59,983 INFO 127.0.0.1 - - [21/Jun/2021 01:04:59] "OPTIONS /login HTTP/1.1" 200 -
+2021-06-21 01:05:00,027 INFO 127.0.0.1 - - [21/Jun/2021 01:05:00] "[31m[1mPOST /login HTTP/1.1[0m" 403 -
+2021-06-21 01:05:12,478 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-21 01:05:24,021 INFO 127.0.0.1 - - [21/Jun/2021 01:05:24] "OPTIONS /login HTTP/1.1" 200 -
+2021-06-21 01:05:24,083 INFO 127.0.0.1 - - [21/Jun/2021 01:05:24] "POST /login HTTP/1.1" 200 -
+2021-06-21 01:05:24,628 INFO 127.0.0.1 - - [21/Jun/2021 01:05:24] "OPTIONS /requests/all HTTP/1.1" 200 -
+2021-06-21 01:05:24,691 INFO 127.0.0.1 - - [21/Jun/2021 01:05:24] "GET /requests/all HTTP/1.1" 200 -
+2021-06-21 01:05:28,831 INFO 127.0.0.1 - - [21/Jun/2021 01:05:28] "GET /requests/all HTTP/1.1" 200 -
+2021-06-21 01:05:29,270 INFO 127.0.0.1 - - [21/Jun/2021 01:05:29] "OPTIONS /account/1 HTTP/1.1" 200 -
+2021-06-21 01:05:29,535 INFO 127.0.0.1 - - [21/Jun/2021 01:05:29] "GET /account/1 HTTP/1.1" 200 -
+2021-06-21 01:05:29,635 INFO 127.0.0.1 - - [21/Jun/2021 01:05:29] "OPTIONS /account/3 HTTP/1.1" 200 -
+2021-06-21 01:05:29,663 INFO 127.0.0.1 - - [21/Jun/2021 01:05:29] "GET /account/3 HTTP/1.1" 200 -
+2021-06-21 01:05:54,926 INFO 127.0.0.1 - - [21/Jun/2021 01:05:54] "OPTIONS /requests/update HTTP/1.1" 200 -
+2021-06-21 01:05:55,155 INFO 127.0.0.1 - - [21/Jun/2021 01:05:55] "PUT /requests/update HTTP/1.1" 200 -
+2021-06-21 01:05:57,670 INFO 127.0.0.1 - - [21/Jun/2021 01:05:57] "OPTIONS /requests/all HTTP/1.1" 200 -
+2021-06-21 01:05:57,845 INFO 127.0.0.1 - - [21/Jun/2021 01:05:57] "GET /requests/all HTTP/1.1" 200 -
+2021-06-21 01:05:58,054 INFO 127.0.0.1 - - [21/Jun/2021 01:05:58] "OPTIONS /account/1 HTTP/1.1" 200 -
+2021-06-21 01:05:58,141 INFO 127.0.0.1 - - [21/Jun/2021 01:05:58] "GET /account/1 HTTP/1.1" 200 -
+2021-06-21 01:05:58,247 INFO 127.0.0.1 - - [21/Jun/2021 01:05:58] "OPTIONS /account/3 HTTP/1.1" 200 -
+2021-06-21 01:05:59,231 INFO 127.0.0.1 - - [21/Jun/2021 01:05:59] "GET /account/3 HTTP/1.1" 200 -
+2021-06-21 01:06:09,631 INFO 127.0.0.1 - - [21/Jun/2021 01:06:09] "OPTIONS /requests/all HTTP/1.1" 200 -
+2021-06-21 01:06:09,712 INFO 127.0.0.1 - - [21/Jun/2021 01:06:09] "GET /requests/all HTTP/1.1" 200 -
+2021-06-21 01:06:09,882 INFO 127.0.0.1 - - [21/Jun/2021 01:06:09] "OPTIONS /account/1 HTTP/1.1" 200 -
+2021-06-21 01:06:10,063 INFO 127.0.0.1 - - [21/Jun/2021 01:06:10] "GET /account/1 HTTP/1.1" 200 -
+2021-06-21 01:06:10,162 INFO 127.0.0.1 - - [21/Jun/2021 01:06:10] "OPTIONS /account/3 HTTP/1.1" 200 -
+2021-06-21 01:06:10,214 INFO 127.0.0.1 - - [21/Jun/2021 01:06:10] "GET /account/3 HTTP/1.1" 200 -
+2021-06-21 01:06:25,176 INFO 127.0.0.1 - - [21/Jun/2021 01:06:25] "OPTIONS /requests/all HTTP/1.1" 200 -
+2021-06-21 01:06:25,216 INFO 127.0.0.1 - - [21/Jun/2021 01:06:25] "GET /requests/all HTTP/1.1" 200 -
+2021-06-21 01:06:25,391 INFO 127.0.0.1 - - [21/Jun/2021 01:06:25] "OPTIONS /account/1 HTTP/1.1" 200 -
+2021-06-21 01:06:25,550 INFO 127.0.0.1 - - [21/Jun/2021 01:06:25] "GET /account/1 HTTP/1.1" 200 -
+2021-06-21 01:06:25,642 INFO 127.0.0.1 - - [21/Jun/2021 01:06:25] "OPTIONS /account/3 HTTP/1.1" 200 -
+2021-06-21 01:06:25,683 INFO 127.0.0.1 - - [21/Jun/2021 01:06:25] "GET /account/3 HTTP/1.1" 200 -
+2021-06-21 01:06:37,420 INFO 127.0.0.1 - - [21/Jun/2021 01:06:37] "OPTIONS /requests/all HTTP/1.1" 200 -
+2021-06-21 01:06:37,473 INFO 127.0.0.1 - - [21/Jun/2021 01:06:37] "GET /requests/all HTTP/1.1" 200 -
+2021-06-21 01:06:37,662 INFO 127.0.0.1 - - [21/Jun/2021 01:06:37] "OPTIONS /account/1 HTTP/1.1" 200 -
+2021-06-21 01:06:37,848 INFO 127.0.0.1 - - [21/Jun/2021 01:06:37] "GET /account/1 HTTP/1.1" 200 -
+2021-06-21 01:06:37,978 INFO 127.0.0.1 - - [21/Jun/2021 01:06:37] "OPTIONS /account/3 HTTP/1.1" 200 -
+2021-06-21 01:06:38,014 INFO 127.0.0.1 - - [21/Jun/2021 01:06:38] "GET /account/3 HTTP/1.1" 200 -
+2021-06-21 01:06:55,237 INFO 127.0.0.1 - - [21/Jun/2021 01:06:55] "OPTIONS /logout HTTP/1.1" 200 -
+2021-06-21 01:06:55,367 INFO 127.0.0.1 - - [21/Jun/2021 01:06:55] "POST /logout HTTP/1.1" 200 -
+2021-06-21 04:34:44,983 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-21 04:34:50,765 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-21 04:36:03,035 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-21 04:36:25,008 INFO 127.0.0.1 - - [21/Jun/2021 04:36:25] "OPTIONS /login HTTP/1.1" 200 -
+2021-06-21 04:36:25,284 INFO 127.0.0.1 - - [21/Jun/2021 04:36:25] "POST /login HTTP/1.1" 200 -
+2021-06-21 04:36:25,427 INFO 127.0.0.1 - - [21/Jun/2021 04:36:25] "OPTIONS /requests/user HTTP/1.1" 200 -
+2021-06-21 04:36:25,762 INFO 127.0.0.1 - - [21/Jun/2021 04:36:25] "GET /requests/user HTTP/1.1" 200 -
+2021-06-21 04:36:26,035 INFO 127.0.0.1 - - [21/Jun/2021 04:36:26] "OPTIONS /logout HTTP/1.1" 200 -
+2021-06-21 04:36:49,542 INFO 127.0.0.1 - - [21/Jun/2021 04:36:49] "OPTIONS /login HTTP/1.1" 200 -
+2021-06-21 04:36:49,811 INFO 127.0.0.1 - - [21/Jun/2021 04:36:49] "[31m[1mPOST /login HTTP/1.1[0m" 403 -
+2021-06-21 04:37:35,365 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-21 04:37:54,497 INFO 127.0.0.1 - - [21/Jun/2021 04:37:54] "OPTIONS /login HTTP/1.1" 200 -
+2021-06-21 04:37:54,770 INFO 127.0.0.1 - - [21/Jun/2021 04:37:54] "POST /login HTTP/1.1" 200 -
+2021-06-21 04:37:54,885 INFO 127.0.0.1 - - [21/Jun/2021 04:37:54] "OPTIONS /requests/user HTTP/1.1" 200 -
+2021-06-21 04:37:55,220 INFO 127.0.0.1 - - [21/Jun/2021 04:37:55] "GET /requests/user HTTP/1.1" 200 -
+2021-06-21 04:37:56,288 INFO 127.0.0.1 - - [21/Jun/2021 04:37:56] "OPTIONS /logout HTTP/1.1" 200 -
+2021-06-21 04:38:12,617 INFO 127.0.0.1 - - [21/Jun/2021 04:38:12] "OPTIONS /login HTTP/1.1" 200 -
+2021-06-21 04:38:12,889 INFO 127.0.0.1 - - [21/Jun/2021 04:38:12] "[31m[1mPOST /login HTTP/1.1[0m" 403 -
+2021-06-21 04:38:54,931 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-21 04:39:04,817 INFO 127.0.0.1 - - [21/Jun/2021 04:39:04] "OPTIONS /login HTTP/1.1" 200 -
+2021-06-21 04:39:05,087 INFO 127.0.0.1 - - [21/Jun/2021 04:39:05] "POST /login HTTP/1.1" 200 -
+2021-06-21 04:39:05,176 INFO 127.0.0.1 - - [21/Jun/2021 04:39:05] "OPTIONS /requests/user HTTP/1.1" 200 -
+2021-06-21 04:39:05,501 INFO 127.0.0.1 - - [21/Jun/2021 04:39:05] "GET /requests/user HTTP/1.1" 200 -
+2021-06-21 04:39:10,631 INFO 127.0.0.1 - - [21/Jun/2021 04:39:10] "OPTIONS /logout HTTP/1.1" 200 -
+2021-06-21 04:39:22,982 INFO 127.0.0.1 - - [21/Jun/2021 04:39:22] "OPTIONS /login HTTP/1.1" 200 -
+2021-06-21 04:39:23,241 INFO 127.0.0.1 - - [21/Jun/2021 04:39:23] "[31m[1mPOST /login HTTP/1.1[0m" 403 -
+2021-06-21 04:40:26,791 INFO 127.0.0.1 - - [21/Jun/2021 04:40:26] "OPTIONS /login HTTP/1.1" 200 -
+2021-06-21 04:40:26,835 INFO 127.0.0.1 - - [21/Jun/2021 04:40:26] "[31m[1mPOST /login HTTP/1.1[0m" 403 -
+2021-06-21 04:40:45,637 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-21 04:41:18,056 INFO 127.0.0.1 - - [21/Jun/2021 04:41:18] "OPTIONS /login HTTP/1.1" 200 -
+2021-06-21 04:41:18,115 INFO 127.0.0.1 - - [21/Jun/2021 04:41:18] "POST /login HTTP/1.1" 200 -
+2021-06-21 04:41:18,460 INFO 127.0.0.1 - - [21/Jun/2021 04:41:18] "OPTIONS /requests/user HTTP/1.1" 200 -
+2021-06-21 04:41:18,489 INFO 127.0.0.1 - - [21/Jun/2021 04:41:18] "GET /requests/user HTTP/1.1" 200 -
+2021-06-21 04:41:27,702 INFO 127.0.0.1 - - [21/Jun/2021 04:41:27] "OPTIONS /logout HTTP/1.1" 200 -
+2021-06-21 04:41:27,710 INFO 127.0.0.1 - - [21/Jun/2021 04:41:27] "POST /logout HTTP/1.1" 200 -
+2021-06-21 04:44:15,166 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-21 04:44:30,483 INFO 127.0.0.1 - - [21/Jun/2021 04:44:30] "OPTIONS /login HTTP/1.1" 200 -
+2021-06-21 04:44:30,762 INFO 127.0.0.1 - - [21/Jun/2021 04:44:30] "POST /login HTTP/1.1" 200 -
+2021-06-21 04:44:30,838 INFO 127.0.0.1 - - [21/Jun/2021 04:44:30] "OPTIONS /requests/user HTTP/1.1" 200 -
+2021-06-21 04:44:31,173 INFO 127.0.0.1 - - [21/Jun/2021 04:44:31] "GET /requests/user HTTP/1.1" 200 -
+2021-06-21 04:44:33,282 INFO 127.0.0.1 - - [21/Jun/2021 04:44:33] "OPTIONS /logout HTTP/1.1" 200 -
+2021-06-21 04:48:13,761 INFO 127.0.0.1 - - [21/Jun/2021 04:48:13] "OPTIONS /login HTTP/1.1" 200 -
+2021-06-21 04:48:14,039 INFO 127.0.0.1 - - [21/Jun/2021 04:48:14] "[31m[1mPOST /login HTTP/1.1[0m" 403 -
+2021-06-21 04:49:44,250 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-21 04:49:55,583 INFO 127.0.0.1 - - [21/Jun/2021 04:49:55] "OPTIONS /login HTTP/1.1" 200 -
+2021-06-21 04:49:55,855 INFO 127.0.0.1 - - [21/Jun/2021 04:49:55] "POST /login HTTP/1.1" 200 -
+2021-06-21 04:49:55,976 INFO 127.0.0.1 - - [21/Jun/2021 04:49:55] "OPTIONS /requests/user HTTP/1.1" 200 -
+2021-06-21 04:49:56,306 INFO 127.0.0.1 - - [21/Jun/2021 04:49:56] "GET /requests/user HTTP/1.1" 200 -
+2021-06-21 04:50:00,377 INFO 127.0.0.1 - - [21/Jun/2021 04:50:00] "OPTIONS /logout HTTP/1.1" 200 -
+2021-06-21 04:50:11,283 INFO 127.0.0.1 - - [21/Jun/2021 04:50:11] "OPTIONS /login HTTP/1.1" 200 -
+2021-06-21 04:50:11,557 INFO 127.0.0.1 - - [21/Jun/2021 04:50:11] "[31m[1mPOST /login HTTP/1.1[0m" 403 -
+2021-06-21 05:02:18,745 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-21 05:02:28,955 INFO 127.0.0.1 - - [21/Jun/2021 05:02:28] "OPTIONS /login HTTP/1.1" 200 -
+2021-06-21 05:02:29,257 INFO 127.0.0.1 - - [21/Jun/2021 05:02:29] "POST /login HTTP/1.1" 200 -
+2021-06-21 05:02:29,431 INFO 127.0.0.1 - - [21/Jun/2021 05:02:29] "OPTIONS /requests/user HTTP/1.1" 200 -
+2021-06-21 05:02:29,772 INFO 127.0.0.1 - - [21/Jun/2021 05:02:29] "GET /requests/user HTTP/1.1" 200 -
+2021-06-21 05:02:33,760 INFO 127.0.0.1 - - [21/Jun/2021 05:02:33] "OPTIONS /logout HTTP/1.1" 200 -
+2021-06-21 05:03:20,735 INFO 127.0.0.1 - - [21/Jun/2021 05:03:20] "OPTIONS /login HTTP/1.1" 200 -
+2021-06-21 05:03:20,980 INFO 127.0.0.1 - - [21/Jun/2021 05:03:20] "[31m[1mPOST /login HTTP/1.1[0m" 403 -
+2021-06-21 05:03:41,499 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-21 05:05:35,864 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-21 05:05:44,868 INFO 127.0.0.1 - - [21/Jun/2021 05:05:44] "OPTIONS /login HTTP/1.1" 200 -
+2021-06-21 05:05:45,147 INFO 127.0.0.1 - - [21/Jun/2021 05:05:45] "POST /login HTTP/1.1" 200 -
+2021-06-21 05:05:45,266 INFO 127.0.0.1 - - [21/Jun/2021 05:05:45] "OPTIONS /requests/user HTTP/1.1" 200 -
+2021-06-21 05:05:45,599 INFO 127.0.0.1 - - [21/Jun/2021 05:05:45] "GET /requests/user HTTP/1.1" 200 -
+2021-06-21 05:05:46,746 INFO 127.0.0.1 - - [21/Jun/2021 05:05:46] "OPTIONS /logout HTTP/1.1" 200 -
+2021-06-21 05:06:19,904 INFO 127.0.0.1 - - [21/Jun/2021 05:06:19] "OPTIONS /login HTTP/1.1" 200 -
+2021-06-21 05:06:20,179 INFO 127.0.0.1 - - [21/Jun/2021 05:06:20] "[31m[1mPOST /login HTTP/1.1[0m" 403 -
+2021-06-21 05:07:34,021 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-21 05:07:53,919 INFO 127.0.0.1 - - [21/Jun/2021 05:07:53] "OPTIONS /login HTTP/1.1" 200 -
+2021-06-21 05:07:54,182 INFO 127.0.0.1 - - [21/Jun/2021 05:07:54] "POST /login HTTP/1.1" 200 -
+2021-06-21 05:07:54,325 INFO 127.0.0.1 - - [21/Jun/2021 05:07:54] "OPTIONS /requests/user HTTP/1.1" 200 -
+2021-06-21 05:07:54,660 INFO 127.0.0.1 - - [21/Jun/2021 05:07:54] "GET /requests/user HTTP/1.1" 200 -
+2021-06-21 05:07:55,784 INFO 127.0.0.1 - - [21/Jun/2021 05:07:55] "OPTIONS /logout HTTP/1.1" 200 -
+2021-06-21 05:08:06,644 INFO 127.0.0.1 - - [21/Jun/2021 05:08:06] "OPTIONS /login HTTP/1.1" 200 -
+2021-06-21 05:08:06,928 INFO 127.0.0.1 - - [21/Jun/2021 05:08:06] "[31m[1mPOST /login HTTP/1.1[0m" 403 -
+2021-06-21 05:14:41,617 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-21 05:14:49,703 INFO 127.0.0.1 - - [21/Jun/2021 05:14:49] "OPTIONS /login HTTP/1.1" 200 -
+2021-06-21 05:14:49,969 INFO 127.0.0.1 - - [21/Jun/2021 05:14:49] "POST /login HTTP/1.1" 200 -
+2021-06-21 05:14:50,112 INFO 127.0.0.1 - - [21/Jun/2021 05:14:50] "OPTIONS /requests/user HTTP/1.1" 200 -
+2021-06-21 05:14:50,434 INFO 127.0.0.1 - - [21/Jun/2021 05:14:50] "GET /requests/user HTTP/1.1" 200 -
+2021-06-21 05:14:51,595 INFO 127.0.0.1 - - [21/Jun/2021 05:14:51] "OPTIONS /logout HTTP/1.1" 200 -
+2021-06-21 05:15:01,892 INFO 127.0.0.1 - - [21/Jun/2021 05:15:01] "OPTIONS /login HTTP/1.1" 200 -
+2021-06-21 05:15:02,173 INFO 127.0.0.1 - - [21/Jun/2021 05:15:02] "[31m[1mPOST /login HTTP/1.1[0m" 403 -
+2021-06-21 05:17:43,896 INFO 127.0.0.1 - - [21/Jun/2021 05:17:43] "OPTIONS /login HTTP/1.1" 200 -
+2021-06-21 05:17:44,165 INFO 127.0.0.1 - - [21/Jun/2021 05:17:44] "[31m[1mPOST /login HTTP/1.1[0m" 403 -
+2021-06-21 05:17:57,039 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-21 05:18:05,380 INFO 127.0.0.1 - - [21/Jun/2021 05:18:05] "OPTIONS /login HTTP/1.1" 200 -
+2021-06-21 05:18:05,635 INFO 127.0.0.1 - - [21/Jun/2021 05:18:05] "POST /login HTTP/1.1" 200 -
+2021-06-21 05:18:05,748 INFO 127.0.0.1 - - [21/Jun/2021 05:18:05] "OPTIONS /requests/user HTTP/1.1" 200 -
+2021-06-21 05:18:06,075 INFO 127.0.0.1 - - [21/Jun/2021 05:18:06] "GET /requests/user HTTP/1.1" 200 -
+2021-06-21 05:18:18,070 INFO 127.0.0.1 - - [21/Jun/2021 05:18:18] "OPTIONS /login HTTP/1.1" 200 -
+2021-06-21 05:18:18,338 INFO 127.0.0.1 - - [21/Jun/2021 05:18:18] "[31m[1mPOST /login HTTP/1.1[0m" 403 -
+2021-06-21 05:18:54,827 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-21 05:19:09,037 INFO 127.0.0.1 - - [21/Jun/2021 05:19:09] "OPTIONS /login HTTP/1.1" 200 -
+2021-06-21 05:19:09,303 INFO 127.0.0.1 - - [21/Jun/2021 05:19:09] "POST /login HTTP/1.1" 200 -
+2021-06-21 05:19:09,438 INFO 127.0.0.1 - - [21/Jun/2021 05:19:09] "OPTIONS /requests/user HTTP/1.1" 200 -
+2021-06-21 05:19:09,760 INFO 127.0.0.1 - - [21/Jun/2021 05:19:09] "GET /requests/user HTTP/1.1" 200 -
+2021-06-21 05:19:10,901 INFO 127.0.0.1 - - [21/Jun/2021 05:19:10] "OPTIONS /logout HTTP/1.1" 200 -
+2021-06-21 05:19:21,987 INFO 127.0.0.1 - - [21/Jun/2021 05:19:21] "OPTIONS /login HTTP/1.1" 200 -
+2021-06-21 05:19:22,245 INFO 127.0.0.1 - - [21/Jun/2021 05:19:22] "[31m[1mPOST /login HTTP/1.1[0m" 403 -
+2021-06-21 05:22:45,286 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-21 05:22:57,069 INFO 127.0.0.1 - - [21/Jun/2021 05:22:57] "OPTIONS /login HTTP/1.1" 200 -
+2021-06-21 05:22:57,344 INFO 127.0.0.1 - - [21/Jun/2021 05:22:57] "POST /login HTTP/1.1" 200 -
+2021-06-21 05:22:57,451 INFO 127.0.0.1 - - [21/Jun/2021 05:22:57] "OPTIONS /requests/user HTTP/1.1" 200 -
+2021-06-21 05:22:57,783 INFO 127.0.0.1 - - [21/Jun/2021 05:22:57] "GET /requests/user HTTP/1.1" 200 -
+2021-06-21 05:22:58,942 INFO 127.0.0.1 - - [21/Jun/2021 05:22:58] "OPTIONS /logout HTTP/1.1" 200 -
+2021-06-21 05:23:32,841 INFO 127.0.0.1 - - [21/Jun/2021 05:23:32] "OPTIONS /login HTTP/1.1" 200 -
+2021-06-21 05:23:33,117 INFO 127.0.0.1 - - [21/Jun/2021 05:23:33] "[31m[1mPOST /login HTTP/1.1[0m" 403 -
+2021-06-21 05:24:01,892 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-21 05:25:19,346 INFO 127.0.0.1 - - [21/Jun/2021 05:25:19] "OPTIONS /login HTTP/1.1" 200 -
+2021-06-21 05:25:19,377 INFO 127.0.0.1 - - [21/Jun/2021 05:25:19] "POST /login HTTP/1.1" 200 -
+2021-06-21 05:25:19,733 INFO 127.0.0.1 - - [21/Jun/2021 05:25:19] "OPTIONS /requests/user HTTP/1.1" 200 -
+2021-06-21 05:25:19,755 INFO 127.0.0.1 - - [21/Jun/2021 05:25:19] "GET /requests/user HTTP/1.1" 200 -
+2021-06-21 05:25:23,691 INFO 127.0.0.1 - - [21/Jun/2021 05:25:23] "OPTIONS /logout HTTP/1.1" 200 -
+2021-06-21 05:25:23,739 INFO 127.0.0.1 - - [21/Jun/2021 05:25:23] "POST /logout HTTP/1.1" 200 -
+2021-06-21 05:25:33,008 INFO 127.0.0.1 - - [21/Jun/2021 05:25:33] "OPTIONS /login HTTP/1.1" 200 -
+2021-06-21 05:25:33,034 INFO 127.0.0.1 - - [21/Jun/2021 05:25:33] "POST /login HTTP/1.1" 200 -
+2021-06-21 05:25:33,398 INFO 127.0.0.1 - - [21/Jun/2021 05:25:33] "OPTIONS /requests/user HTTP/1.1" 200 -
+2021-06-21 05:25:33,429 INFO 127.0.0.1 - - [21/Jun/2021 05:25:33] "GET /requests/user HTTP/1.1" 200 -
+2021-06-21 05:25:34,854 INFO 127.0.0.1 - - [21/Jun/2021 05:25:34] "OPTIONS /logout HTTP/1.1" 200 -
+2021-06-21 05:25:34,868 INFO 127.0.0.1 - - [21/Jun/2021 05:25:34] "POST /logout HTTP/1.1" 200 -
+2021-06-21 05:28:44,663 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-21 05:28:55,386 INFO 127.0.0.1 - - [21/Jun/2021 05:28:55] "OPTIONS /login HTTP/1.1" 200 -
+2021-06-21 05:28:55,657 INFO 127.0.0.1 - - [21/Jun/2021 05:28:55] "POST /login HTTP/1.1" 200 -
+2021-06-21 05:28:55,771 INFO 127.0.0.1 - - [21/Jun/2021 05:28:55] "OPTIONS /requests/user HTTP/1.1" 200 -
+2021-06-21 05:28:56,100 INFO 127.0.0.1 - - [21/Jun/2021 05:28:56] "GET /requests/user HTTP/1.1" 200 -
+2021-06-21 05:29:02,258 INFO 127.0.0.1 - - [21/Jun/2021 05:29:02] "OPTIONS /logout HTTP/1.1" 200 -
+2021-06-21 05:29:15,189 INFO 127.0.0.1 - - [21/Jun/2021 05:29:15] "OPTIONS /login HTTP/1.1" 200 -
+2021-06-21 05:29:15,474 INFO 127.0.0.1 - - [21/Jun/2021 05:29:15] "[31m[1mPOST /login HTTP/1.1[0m" 403 -
+2021-06-21 05:38:07,277 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-21 05:38:10,644 INFO 127.0.0.1 - - [21/Jun/2021 05:38:10] "OPTIONS /login HTTP/1.1" 200 -
+2021-06-21 05:38:10,709 INFO 127.0.0.1 - - [21/Jun/2021 05:38:10] "POST /login HTTP/1.1" 200 -
+2021-06-21 05:38:10,939 INFO 127.0.0.1 - - [21/Jun/2021 05:38:10] "OPTIONS /requests/user HTTP/1.1" 200 -
+2021-06-21 05:38:10,957 INFO 127.0.0.1 - - [21/Jun/2021 05:38:10] "GET /requests/user HTTP/1.1" 200 -
+2021-06-21 05:42:18,276 INFO 127.0.0.1 - - [21/Jun/2021 05:42:18] "OPTIONS /requests/user HTTP/1.1" 200 -
+2021-06-21 05:42:18,302 INFO 127.0.0.1 - - [21/Jun/2021 05:42:18] "GET /requests/user HTTP/1.1" 200 -
+2021-06-21 05:45:50,177 INFO 127.0.0.1 - - [21/Jun/2021 05:45:50] "OPTIONS /requests/user HTTP/1.1" 200 -
+2021-06-21 05:45:50,191 INFO 127.0.0.1 - - [21/Jun/2021 05:45:50] "GET /requests/user HTTP/1.1" 200 -
+2021-06-21 05:46:38,464 INFO 127.0.0.1 - - [21/Jun/2021 05:46:38] "OPTIONS /requests/user HTTP/1.1" 200 -
+2021-06-21 05:46:38,480 INFO 127.0.0.1 - - [21/Jun/2021 05:46:38] "GET /requests/user HTTP/1.1" 200 -
+2021-06-21 05:46:39,423 INFO 127.0.0.1 - - [21/Jun/2021 05:46:39] "GET /requests/user HTTP/1.1" 200 -
+2021-06-21 05:46:40,127 INFO 127.0.0.1 - - [21/Jun/2021 05:46:40] "GET /requests/user HTTP/1.1" 200 -
+2021-06-21 05:46:40,654 INFO 127.0.0.1 - - [21/Jun/2021 05:46:40] "GET /requests/user HTTP/1.1" 200 -
+2021-06-21 05:50:07,819 INFO 127.0.0.1 - - [21/Jun/2021 05:50:07] "OPTIONS /requests/user HTTP/1.1" 200 -
+2021-06-21 05:50:07,844 INFO 127.0.0.1 - - [21/Jun/2021 05:50:07] "GET /requests/user HTTP/1.1" 200 -
+2021-06-21 05:50:31,524 INFO 127.0.0.1 - - [21/Jun/2021 05:50:31] "OPTIONS /requests/user HTTP/1.1" 200 -
+2021-06-21 05:50:31,545 INFO 127.0.0.1 - - [21/Jun/2021 05:50:31] "GET /requests/user HTTP/1.1" 200 -
+2021-06-21 05:51:40,812 INFO 127.0.0.1 - - [21/Jun/2021 05:51:40] "OPTIONS /requests/user HTTP/1.1" 200 -
+2021-06-21 05:51:40,826 INFO 127.0.0.1 - - [21/Jun/2021 05:51:40] "GET /requests/user HTTP/1.1" 200 -
+2021-06-21 05:52:53,153 INFO 127.0.0.1 - - [21/Jun/2021 05:52:53] "OPTIONS /logout HTTP/1.1" 200 -
+2021-06-21 05:52:53,197 INFO 127.0.0.1 - - [21/Jun/2021 05:52:53] "POST /logout HTTP/1.1" 200 -
+2021-06-21 05:53:10,322 INFO 127.0.0.1 - - [21/Jun/2021 05:53:10] "OPTIONS /login HTTP/1.1" 200 -
+2021-06-21 05:53:10,338 INFO 127.0.0.1 - - [21/Jun/2021 05:53:10] "POST /login HTTP/1.1" 200 -
+2021-06-21 05:53:10,474 INFO 127.0.0.1 - - [21/Jun/2021 05:53:10] "OPTIONS /requests/all HTTP/1.1" 200 -
+2021-06-21 05:53:10,502 INFO 127.0.0.1 - - [21/Jun/2021 05:53:10] "GET /requests/all HTTP/1.1" 200 -
+2021-06-21 05:53:13,318 INFO 127.0.0.1 - - [21/Jun/2021 05:53:13] "GET /requests/all HTTP/1.1" 200 -
+2021-06-21 05:53:13,439 INFO 127.0.0.1 - - [21/Jun/2021 05:53:13] "OPTIONS /account/1 HTTP/1.1" 200 -
+2021-06-21 05:53:13,458 INFO 127.0.0.1 - - [21/Jun/2021 05:53:13] "GET /account/1 HTTP/1.1" 200 -
+2021-06-21 05:53:13,492 INFO 127.0.0.1 - - [21/Jun/2021 05:53:13] "OPTIONS /account/3 HTTP/1.1" 200 -
+2021-06-21 05:53:13,515 INFO 127.0.0.1 - - [21/Jun/2021 05:53:13] "GET /account/3 HTTP/1.1" 200 -
+2021-06-21 05:53:13,539 INFO 127.0.0.1 - - [21/Jun/2021 05:53:13] "OPTIONS /account/4 HTTP/1.1" 200 -
+2021-06-21 05:53:13,560 INFO 127.0.0.1 - - [21/Jun/2021 05:53:13] "GET /account/4 HTTP/1.1" 200 -
+2021-06-21 05:55:14,434 INFO 127.0.0.1 - - [21/Jun/2021 05:55:14] "OPTIONS /requests/all HTTP/1.1" 200 -
+2021-06-21 05:55:14,461 INFO 127.0.0.1 - - [21/Jun/2021 05:55:14] "GET /requests/all HTTP/1.1" 200 -
+2021-06-21 05:56:30,503 INFO 127.0.0.1 - - [21/Jun/2021 05:56:30] "OPTIONS /requests/all HTTP/1.1" 200 -
+2021-06-21 05:56:30,516 INFO 127.0.0.1 - - [21/Jun/2021 05:56:30] "GET /requests/all HTTP/1.1" 200 -
+2021-06-21 05:58:58,394 INFO 127.0.0.1 - - [21/Jun/2021 05:58:58] "OPTIONS /requests/all HTTP/1.1" 200 -
+2021-06-21 05:58:58,409 INFO 127.0.0.1 - - [21/Jun/2021 05:58:58] "GET /requests/all HTTP/1.1" 200 -
+2021-06-21 05:59:30,042 INFO 127.0.0.1 - - [21/Jun/2021 05:59:30] "OPTIONS /requests/all HTTP/1.1" 200 -
+2021-06-21 05:59:30,055 INFO 127.0.0.1 - - [21/Jun/2021 05:59:30] "GET /requests/all HTTP/1.1" 200 -
+2021-06-21 05:59:30,821 INFO 127.0.0.1 - - [21/Jun/2021 05:59:30] "GET /requests/all HTTP/1.1" 200 -
+2021-06-21 05:59:42,666 INFO 127.0.0.1 - - [21/Jun/2021 05:59:42] "OPTIONS /requests/all HTTP/1.1" 200 -
+2021-06-21 05:59:42,683 INFO 127.0.0.1 - - [21/Jun/2021 05:59:42] "GET /requests/all HTTP/1.1" 200 -
+2021-06-21 06:03:24,752 INFO 127.0.0.1 - - [21/Jun/2021 06:03:24] "OPTIONS /logout HTTP/1.1" 200 -
+2021-06-21 06:03:24,758 INFO 127.0.0.1 - - [21/Jun/2021 06:03:24] "POST /logout HTTP/1.1" 200 -
+2021-06-21 06:20:04,620 INFO 127.0.0.1 - - [21/Jun/2021 06:20:04] "OPTIONS /login HTTP/1.1" 200 -
+2021-06-21 06:20:04,637 INFO 127.0.0.1 - - [21/Jun/2021 06:20:04] "POST /login HTTP/1.1" 200 -
+2021-06-21 06:20:04,760 INFO 127.0.0.1 - - [21/Jun/2021 06:20:04] "OPTIONS /requests/user HTTP/1.1" 200 -
+2021-06-21 06:20:04,780 INFO 127.0.0.1 - - [21/Jun/2021 06:20:04] "GET /requests/user HTTP/1.1" 200 -
+2021-06-21 06:25:14,227 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-21 06:27:44,129 INFO 127.0.0.1 - - [21/Jun/2021 06:27:44] "OPTIONS /login HTTP/1.1" 200 -
+2021-06-21 06:27:44,158 INFO 127.0.0.1 - - [21/Jun/2021 06:27:44] "[31m[1mPOST /login HTTP/1.1[0m" 400 -
+2021-06-21 06:27:59,747 INFO 127.0.0.1 - - [21/Jun/2021 06:27:59] "OPTIONS /login HTTP/1.1" 200 -
+2021-06-21 06:27:59,776 INFO 127.0.0.1 - - [21/Jun/2021 06:27:59] "[31m[1mPOST /login HTTP/1.1[0m" 400 -
+2021-06-21 06:28:15,417 INFO 127.0.0.1 - - [21/Jun/2021 06:28:15] "OPTIONS /login HTTP/1.1" 200 -
+2021-06-21 06:28:15,438 INFO 127.0.0.1 - - [21/Jun/2021 06:28:15] "[31m[1mPOST /login HTTP/1.1[0m" 400 -
+2021-06-21 06:28:16,042 INFO 127.0.0.1 - - [21/Jun/2021 06:28:16] "[31m[1mPOST /login HTTP/1.1[0m" 400 -
+2021-06-21 06:28:42,690 INFO 127.0.0.1 - - [21/Jun/2021 06:28:42] "OPTIONS /login HTTP/1.1" 200 -
+2021-06-21 06:28:42,762 INFO 127.0.0.1 - - [21/Jun/2021 06:28:42] "[31m[1mPOST /login HTTP/1.1[0m" 400 -
+2021-06-21 06:28:50,673 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-21 06:29:10,367 INFO 127.0.0.1 - - [21/Jun/2021 06:29:10] "OPTIONS /login HTTP/1.1" 200 -
+2021-06-21 06:29:10,429 INFO 127.0.0.1 - - [21/Jun/2021 06:29:10] "POST /login HTTP/1.1" 200 -
+2021-06-21 06:29:10,612 INFO 127.0.0.1 - - [21/Jun/2021 06:29:10] "OPTIONS /requests/all HTTP/1.1" 200 -
+2021-06-21 06:29:10,646 INFO 127.0.0.1 - - [21/Jun/2021 06:29:10] "GET /requests/all HTTP/1.1" 200 -
+2021-06-21 06:29:13,636 INFO 127.0.0.1 - - [21/Jun/2021 06:29:13] "OPTIONS /logout HTTP/1.1" 200 -
+2021-06-21 06:29:13,750 INFO 127.0.0.1 - - [21/Jun/2021 06:29:13] "POST /logout HTTP/1.1" 200 -
+2021-06-21 06:29:40,595 INFO 127.0.0.1 - - [21/Jun/2021 06:29:40] "OPTIONS /login HTTP/1.1" 200 -
+2021-06-21 06:29:40,644 INFO 127.0.0.1 - - [21/Jun/2021 06:29:40] "POST /login HTTP/1.1" 200 -
+2021-06-21 06:29:40,767 INFO 127.0.0.1 - - [21/Jun/2021 06:29:40] "OPTIONS /requests/user HTTP/1.1" 200 -
+2021-06-21 06:29:40,782 INFO 127.0.0.1 - - [21/Jun/2021 06:29:40] "GET /requests/user HTTP/1.1" 200 -
+2021-06-21 06:31:06,057 INFO 127.0.0.1 - - [21/Jun/2021 06:31:06] "OPTIONS /requests HTTP/1.1" 200 -
+2021-06-21 06:31:06,095 INFO 127.0.0.1 - - [21/Jun/2021 06:31:06] "[35m[1mPOST /requests HTTP/1.1[0m" 201 -
+2021-06-21 06:31:06,286 INFO 127.0.0.1 - - [21/Jun/2021 06:31:06] "OPTIONS /requests/user HTTP/1.1" 200 -
+2021-06-21 06:31:06,320 INFO 127.0.0.1 - - [21/Jun/2021 06:31:06] "GET /requests/user HTTP/1.1" 200 -
+2021-06-21 06:34:10,831 INFO 127.0.0.1 - - [21/Jun/2021 06:34:10] "OPTIONS /requests HTTP/1.1" 200 -
+2021-06-21 06:34:10,883 INFO 127.0.0.1 - - [21/Jun/2021 06:34:10] "[35m[1mPOST /requests HTTP/1.1[0m" 201 -
+2021-06-21 06:34:11,036 INFO 127.0.0.1 - - [21/Jun/2021 06:34:11] "OPTIONS /requests/user HTTP/1.1" 200 -
+2021-06-21 06:34:11,065 INFO 127.0.0.1 - - [21/Jun/2021 06:34:11] "GET /requests/user HTTP/1.1" 200 -
+2021-06-21 06:36:00,769 INFO 127.0.0.1 - - [21/Jun/2021 06:36:00] "OPTIONS /requests HTTP/1.1" 200 -
+2021-06-21 06:36:00,842 INFO 127.0.0.1 - - [21/Jun/2021 06:36:00] "[35m[1mPOST /requests HTTP/1.1[0m" 201 -
+2021-06-21 06:36:00,989 INFO 127.0.0.1 - - [21/Jun/2021 06:36:00] "OPTIONS /requests/user HTTP/1.1" 200 -
+2021-06-21 06:36:01,028 INFO 127.0.0.1 - - [21/Jun/2021 06:36:01] "GET /requests/user HTTP/1.1" 200 -
+2021-06-21 06:36:08,726 INFO 127.0.0.1 - - [21/Jun/2021 06:36:08] "OPTIONS /logout HTTP/1.1" 200 -
+2021-06-21 06:36:08,735 INFO 127.0.0.1 - - [21/Jun/2021 06:36:08] "POST /logout HTTP/1.1" 200 -
+2021-06-21 06:36:35,385 INFO 127.0.0.1 - - [21/Jun/2021 06:36:35] "OPTIONS /login HTTP/1.1" 200 -
+2021-06-21 06:36:35,443 INFO 127.0.0.1 - - [21/Jun/2021 06:36:35] "POST /login HTTP/1.1" 200 -
+2021-06-21 06:36:35,583 INFO 127.0.0.1 - - [21/Jun/2021 06:36:35] "OPTIONS /requests/user HTTP/1.1" 200 -
+2021-06-21 06:36:35,610 INFO 127.0.0.1 - - [21/Jun/2021 06:36:35] "GET /requests/user HTTP/1.1" 200 -
+2021-06-21 06:39:35,893 INFO 127.0.0.1 - - [21/Jun/2021 06:39:35] "OPTIONS /requests HTTP/1.1" 200 -
+2021-06-21 06:39:35,967 INFO 127.0.0.1 - - [21/Jun/2021 06:39:35] "[35m[1mPOST /requests HTTP/1.1[0m" 201 -
+2021-06-21 06:39:36,074 INFO 127.0.0.1 - - [21/Jun/2021 06:39:36] "OPTIONS /requests/user HTTP/1.1" 200 -
+2021-06-21 06:39:36,109 INFO 127.0.0.1 - - [21/Jun/2021 06:39:36] "GET /requests/user HTTP/1.1" 200 -
+2021-06-21 06:40:53,265 INFO 127.0.0.1 - - [21/Jun/2021 06:40:53] "OPTIONS /requests HTTP/1.1" 200 -
+2021-06-21 06:40:53,330 INFO 127.0.0.1 - - [21/Jun/2021 06:40:53] "[35m[1mPOST /requests HTTP/1.1[0m" 201 -
+2021-06-21 06:40:53,479 INFO 127.0.0.1 - - [21/Jun/2021 06:40:53] "OPTIONS /requests/user HTTP/1.1" 200 -
+2021-06-21 06:40:53,514 INFO 127.0.0.1 - - [21/Jun/2021 06:40:53] "GET /requests/user HTTP/1.1" 200 -
+2021-06-21 06:41:14,894 INFO 127.0.0.1 - - [21/Jun/2021 06:41:14] "OPTIONS /logout HTTP/1.1" 200 -
+2021-06-21 06:41:14,901 INFO 127.0.0.1 - - [21/Jun/2021 06:41:14] "POST /logout HTTP/1.1" 200 -
+2021-06-21 06:41:44,094 INFO 127.0.0.1 - - [21/Jun/2021 06:41:44] "OPTIONS /login HTTP/1.1" 200 -
+2021-06-21 06:41:44,109 INFO 127.0.0.1 - - [21/Jun/2021 06:41:44] "POST /login HTTP/1.1" 200 -
+2021-06-21 06:41:44,282 INFO 127.0.0.1 - - [21/Jun/2021 06:41:44] "OPTIONS /requests/user HTTP/1.1" 200 -
+2021-06-21 06:41:44,306 INFO 127.0.0.1 - - [21/Jun/2021 06:41:44] "GET /requests/user HTTP/1.1" 200 -
+2021-06-21 06:45:24,007 INFO 127.0.0.1 - - [21/Jun/2021 06:45:24] "OPTIONS /requests HTTP/1.1" 200 -
+2021-06-21 06:45:24,039 INFO 127.0.0.1 - - [21/Jun/2021 06:45:24] "[35m[1mPOST /requests HTTP/1.1[0m" 201 -
+2021-06-21 06:45:24,197 INFO 127.0.0.1 - - [21/Jun/2021 06:45:24] "OPTIONS /requests/user HTTP/1.1" 200 -
+2021-06-21 06:45:24,230 INFO 127.0.0.1 - - [21/Jun/2021 06:45:24] "GET /requests/user HTTP/1.1" 200 -
+2021-06-21 06:58:58,971 INFO 127.0.0.1 - - [21/Jun/2021 06:58:58] "OPTIONS /logout HTTP/1.1" 200 -
+2021-06-21 06:58:58,981 INFO 127.0.0.1 - - [21/Jun/2021 06:58:58] "POST /logout HTTP/1.1" 200 -
+2021-06-21 06:59:20,815 INFO 127.0.0.1 - - [21/Jun/2021 06:59:20] "OPTIONS /login HTTP/1.1" 200 -
+2021-06-21 06:59:20,869 INFO 127.0.0.1 - - [21/Jun/2021 06:59:20] "[31m[1mPOST /login HTTP/1.1[0m" 400 -
+2021-06-21 06:59:29,767 INFO 127.0.0.1 - - [21/Jun/2021 06:59:29] "OPTIONS /login HTTP/1.1" 200 -
+2021-06-21 06:59:29,785 INFO 127.0.0.1 - - [21/Jun/2021 06:59:29] "POST /login HTTP/1.1" 200 -
+2021-06-21 06:59:29,974 INFO 127.0.0.1 - - [21/Jun/2021 06:59:29] "OPTIONS /requests/all HTTP/1.1" 200 -
+2021-06-21 06:59:30,003 INFO 127.0.0.1 - - [21/Jun/2021 06:59:30] "GET /requests/all HTTP/1.1" 200 -
+2021-06-21 07:00:50,981 INFO 127.0.0.1 - - [21/Jun/2021 07:00:50] "OPTIONS /requests/update HTTP/1.1" 200 -
+2021-06-21 07:00:51,022 INFO 127.0.0.1 - - [21/Jun/2021 07:00:51] "PUT /requests/update HTTP/1.1" 200 -
+2021-06-21 07:00:55,988 INFO 127.0.0.1 - - [21/Jun/2021 07:00:55] "PUT /requests/update HTTP/1.1" 200 -
+2021-06-21 07:01:01,509 INFO 127.0.0.1 - - [21/Jun/2021 07:01:01] "OPTIONS /requests/update HTTP/1.1" 200 -
+2021-06-21 07:01:01,553 INFO 127.0.0.1 - - [21/Jun/2021 07:01:01] "PUT /requests/update HTTP/1.1" 200 -
+2021-06-21 07:01:34,414 INFO 127.0.0.1 - - [21/Jun/2021 07:01:34] "OPTIONS /requests/update HTTP/1.1" 200 -
+2021-06-21 07:01:34,492 INFO 127.0.0.1 - - [21/Jun/2021 07:01:34] "PUT /requests/update HTTP/1.1" 200 -
+2021-06-21 07:01:36,068 INFO 127.0.0.1 - - [21/Jun/2021 07:01:36] "OPTIONS /requests/all HTTP/1.1" 200 -
+2021-06-21 07:01:36,158 INFO 127.0.0.1 - - [21/Jun/2021 07:01:36] "GET /requests/all HTTP/1.1" 200 -
+2021-06-21 07:01:36,282 INFO 127.0.0.1 - - [21/Jun/2021 07:01:36] "OPTIONS /account/1 HTTP/1.1" 200 -
+2021-06-21 07:01:36,310 INFO 127.0.0.1 - - [21/Jun/2021 07:01:36] "GET /account/1 HTTP/1.1" 200 -
+2021-06-21 07:01:36,351 INFO 127.0.0.1 - - [21/Jun/2021 07:01:36] "OPTIONS /account/3 HTTP/1.1" 200 -
+2021-06-21 07:01:36,376 INFO 127.0.0.1 - - [21/Jun/2021 07:01:36] "GET /account/3 HTTP/1.1" 200 -
+2021-06-21 07:01:36,401 INFO 127.0.0.1 - - [21/Jun/2021 07:01:36] "OPTIONS /account/6 HTTP/1.1" 200 -
+2021-06-21 07:01:36,420 INFO 127.0.0.1 - - [21/Jun/2021 07:01:36] "GET /account/6 HTTP/1.1" 200 -
+2021-06-21 07:01:36,434 INFO 127.0.0.1 - - [21/Jun/2021 07:01:36] "OPTIONS /account/7 HTTP/1.1" 200 -
+2021-06-21 07:01:36,477 INFO 127.0.0.1 - - [21/Jun/2021 07:01:36] "GET /account/7 HTTP/1.1" 200 -
+2021-06-21 07:01:36,536 INFO 127.0.0.1 - - [21/Jun/2021 07:01:36] "OPTIONS /account/5 HTTP/1.1" 200 -
+2021-06-21 07:01:36,579 INFO 127.0.0.1 - - [21/Jun/2021 07:01:36] "GET /account/5 HTTP/1.1" 200 -
+2021-06-21 07:01:36,601 INFO 127.0.0.1 - - [21/Jun/2021 07:01:36] "OPTIONS /account/4 HTTP/1.1" 200 -
+2021-06-21 07:01:36,636 INFO 127.0.0.1 - - [21/Jun/2021 07:01:36] "GET /account/4 HTTP/1.1" 200 -
+2021-06-21 07:01:59,571 INFO 127.0.0.1 - - [21/Jun/2021 07:01:59] "OPTIONS /requests/update HTTP/1.1" 200 -
+2021-06-21 07:01:59,597 INFO 127.0.0.1 - - [21/Jun/2021 07:01:59] "PUT /requests/update HTTP/1.1" 200 -
+2021-06-21 07:02:19,651 INFO 127.0.0.1 - - [21/Jun/2021 07:02:19] "OPTIONS /requests/all HTTP/1.1" 200 -
+2021-06-21 07:02:19,738 INFO 127.0.0.1 - - [21/Jun/2021 07:02:19] "GET /requests/all HTTP/1.1" 200 -
+2021-06-21 07:02:19,806 INFO 127.0.0.1 - - [21/Jun/2021 07:02:19] "OPTIONS /account/1 HTTP/1.1" 200 -
+2021-06-21 07:02:19,825 INFO 127.0.0.1 - - [21/Jun/2021 07:02:19] "GET /account/1 HTTP/1.1" 200 -
+2021-06-21 07:02:19,849 INFO 127.0.0.1 - - [21/Jun/2021 07:02:19] "OPTIONS /account/3 HTTP/1.1" 200 -
+2021-06-21 07:02:19,865 INFO 127.0.0.1 - - [21/Jun/2021 07:02:19] "GET /account/3 HTTP/1.1" 200 -
+2021-06-21 07:02:19,885 INFO 127.0.0.1 - - [21/Jun/2021 07:02:19] "OPTIONS /account/6 HTTP/1.1" 200 -
+2021-06-21 07:02:19,906 INFO 127.0.0.1 - - [21/Jun/2021 07:02:19] "GET /account/6 HTTP/1.1" 200 -
+2021-06-21 07:02:19,970 INFO 127.0.0.1 - - [21/Jun/2021 07:02:19] "OPTIONS /account/7 HTTP/1.1" 200 -
+2021-06-21 07:02:20,010 INFO 127.0.0.1 - - [21/Jun/2021 07:02:20] "GET /account/7 HTTP/1.1" 200 -
+2021-06-21 07:02:20,044 INFO 127.0.0.1 - - [21/Jun/2021 07:02:20] "OPTIONS /account/5 HTTP/1.1" 200 -
+2021-06-21 07:02:20,065 INFO 127.0.0.1 - - [21/Jun/2021 07:02:20] "GET /account/5 HTTP/1.1" 200 -
+2021-06-21 07:02:20,087 INFO 127.0.0.1 - - [21/Jun/2021 07:02:20] "OPTIONS /account/4 HTTP/1.1" 200 -
+2021-06-21 07:02:20,114 INFO 127.0.0.1 - - [21/Jun/2021 07:02:20] "GET /account/4 HTTP/1.1" 200 -
+2021-06-21 07:04:09,048 INFO 127.0.0.1 - - [21/Jun/2021 07:04:09] "OPTIONS /logout HTTP/1.1" 200 -
+2021-06-21 07:04:09,057 INFO 127.0.0.1 - - [21/Jun/2021 07:04:09] "POST /logout HTTP/1.1" 200 -
+2021-06-21 07:04:25,527 INFO 127.0.0.1 - - [21/Jun/2021 07:04:25] "OPTIONS /login HTTP/1.1" 200 -
+2021-06-21 07:04:25,587 INFO 127.0.0.1 - - [21/Jun/2021 07:04:25] "POST /login HTTP/1.1" 200 -
+2021-06-21 07:04:25,726 INFO 127.0.0.1 - - [21/Jun/2021 07:04:25] "OPTIONS /requests/user HTTP/1.1" 200 -
+2021-06-21 07:04:25,751 INFO 127.0.0.1 - - [21/Jun/2021 07:04:25] "GET /requests/user HTTP/1.1" 200 -
+2021-06-21 07:08:29,980 INFO 127.0.0.1 - - [21/Jun/2021 07:08:29] "OPTIONS /logout HTTP/1.1" 200 -
+2021-06-21 07:08:30,026 INFO 127.0.0.1 - - [21/Jun/2021 07:08:30] "POST /logout HTTP/1.1" 200 -
+2021-06-21 09:27:08,922 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-21 09:27:28,026 INFO 127.0.0.1 - - [21/Jun/2021 09:27:28] "OPTIONS /login HTTP/1.1" 200 -
+2021-06-21 09:27:28,088 INFO 127.0.0.1 - - [21/Jun/2021 09:27:28] "POST /login HTTP/1.1" 200 -
+2021-06-21 09:27:28,188 INFO 127.0.0.1 - - [21/Jun/2021 09:27:28] "OPTIONS /requests/all HTTP/1.1" 200 -
+2021-06-21 09:27:28,216 INFO 127.0.0.1 - - [21/Jun/2021 09:27:28] "GET /requests/all HTTP/1.1" 200 -
+2021-06-21 09:28:41,671 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-21 09:28:53,657 INFO 127.0.0.1 - - [21/Jun/2021 09:28:53] "OPTIONS /login HTTP/1.1" 200 -
+2021-06-21 09:28:53,688 INFO 127.0.0.1 - - [21/Jun/2021 09:28:53] "POST /login HTTP/1.1" 200 -
+2021-06-21 09:28:53,818 INFO 127.0.0.1 - - [21/Jun/2021 09:28:53] "OPTIONS /requests/user HTTP/1.1" 200 -
+2021-06-21 09:28:53,832 INFO 127.0.0.1 - - [21/Jun/2021 09:28:53] "GET /requests/user HTTP/1.1" 200 -
+2021-06-21 09:29:02,127 INFO 127.0.0.1 - - [21/Jun/2021 09:29:02] "OPTIONS /logout HTTP/1.1" 200 -
+2021-06-21 09:29:02,132 INFO 127.0.0.1 - - [21/Jun/2021 09:29:02] "POST /logout HTTP/1.1" 200 -
+2021-06-21 09:29:27,638 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-21 09:29:52,105 INFO 127.0.0.1 - - [21/Jun/2021 09:29:52] "OPTIONS /login HTTP/1.1" 200 -
+2021-06-21 09:29:52,172 INFO 127.0.0.1 - - [21/Jun/2021 09:29:52] "POST /login HTTP/1.1" 200 -
+2021-06-21 09:29:52,271 INFO 127.0.0.1 - - [21/Jun/2021 09:29:52] "OPTIONS /requests/user HTTP/1.1" 200 -
+2021-06-21 09:29:52,294 INFO 127.0.0.1 - - [21/Jun/2021 09:29:52] "GET /requests/user HTTP/1.1" 200 -
+2021-06-21 09:30:06,073 INFO 127.0.0.1 - - [21/Jun/2021 09:30:06] "OPTIONS /logout HTTP/1.1" 200 -
+2021-06-21 09:30:06,077 INFO 127.0.0.1 - - [21/Jun/2021 09:30:06] "POST /logout HTTP/1.1" 200 -
+2021-06-21 11:01:54,684 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-21 11:02:04,800 INFO 127.0.0.1 - - [21/Jun/2021 11:02:04] "OPTIONS /login HTTP/1.1" 200 -
+2021-06-21 11:02:04,849 INFO 127.0.0.1 - - [21/Jun/2021 11:02:04] "POST /login HTTP/1.1" 200 -
+2021-06-21 11:02:05,019 INFO 127.0.0.1 - - [21/Jun/2021 11:02:05] "OPTIONS /requests/all HTTP/1.1" 200 -
+2021-06-21 11:02:05,038 INFO 127.0.0.1 - - [21/Jun/2021 11:02:05] "GET /requests/all HTTP/1.1" 200 -
+2021-06-21 11:02:07,156 INFO 127.0.0.1 - - [21/Jun/2021 11:02:07] "GET /requests/all HTTP/1.1" 200 -
+2021-06-21 11:02:07,333 INFO 127.0.0.1 - - [21/Jun/2021 11:02:07] "OPTIONS /account/1 HTTP/1.1" 200 -
+2021-06-21 11:02:07,355 INFO 127.0.0.1 - - [21/Jun/2021 11:02:07] "GET /account/1 HTTP/1.1" 200 -
+2021-06-21 11:02:07,380 INFO 127.0.0.1 - - [21/Jun/2021 11:02:07] "OPTIONS /account/3 HTTP/1.1" 200 -
+2021-06-21 11:02:07,397 INFO 127.0.0.1 - - [21/Jun/2021 11:02:07] "GET /account/3 HTTP/1.1" 200 -
+2021-06-21 11:02:07,413 INFO 127.0.0.1 - - [21/Jun/2021 11:02:07] "OPTIONS /account/6 HTTP/1.1" 200 -
+2021-06-21 11:02:07,429 INFO 127.0.0.1 - - [21/Jun/2021 11:02:07] "GET /account/6 HTTP/1.1" 200 -
+2021-06-21 11:02:07,448 INFO 127.0.0.1 - - [21/Jun/2021 11:02:07] "OPTIONS /account/7 HTTP/1.1" 200 -
+2021-06-21 11:02:07,470 INFO 127.0.0.1 - - [21/Jun/2021 11:02:07] "GET /account/7 HTTP/1.1" 200 -
+2021-06-21 11:02:07,502 INFO 127.0.0.1 - - [21/Jun/2021 11:02:07] "OPTIONS /account/5 HTTP/1.1" 200 -
+2021-06-21 11:02:07,542 INFO 127.0.0.1 - - [21/Jun/2021 11:02:07] "GET /account/5 HTTP/1.1" 200 -
+2021-06-21 11:02:07,574 INFO 127.0.0.1 - - [21/Jun/2021 11:02:07] "OPTIONS /account/4 HTTP/1.1" 200 -
+2021-06-21 11:02:07,596 INFO 127.0.0.1 - - [21/Jun/2021 11:02:07] "GET /account/4 HTTP/1.1" 200 -
+2021-06-21 11:26:50,081 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-21 11:28:45,557 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-21 11:29:36,922 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-21 12:44:35,914 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-21 12:44:54,375 INFO 127.0.0.1 - - [21/Jun/2021 12:44:54] "OPTIONS /login HTTP/1.1" 200 -
+2021-06-21 12:44:54,416 INFO 127.0.0.1 - - [21/Jun/2021 12:44:54] "POST /login HTTP/1.1" 200 -
+2021-06-21 12:44:54,567 INFO 127.0.0.1 - - [21/Jun/2021 12:44:54] "OPTIONS /requests/user HTTP/1.1" 200 -
+2021-06-21 12:44:54,601 INFO 127.0.0.1 - - [21/Jun/2021 12:44:54] "GET /requests/user HTTP/1.1" 200 -
+2021-06-21 12:49:54,211 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-21 12:49:54,344 INFO 127.0.0.1 - - [21/Jun/2021 12:49:54] "OPTIONS /login HTTP/1.1" 200 -
+2021-06-21 12:49:54,652 INFO 127.0.0.1 - - [21/Jun/2021 12:49:54] "POST /login HTTP/1.1" 200 -
+2021-06-21 12:49:54,983 INFO 127.0.0.1 - - [21/Jun/2021 12:49:54] "OPTIONS /requests/user HTTP/1.1" 200 -
+2021-06-21 12:49:55,003 INFO 127.0.0.1 - - [21/Jun/2021 12:49:55] "GET /requests/user HTTP/1.1" 200 -
+2021-06-21 12:51:03,051 INFO 127.0.0.1 - - [21/Jun/2021 12:51:03] "OPTIONS /requests HTTP/1.1" 200 -
+2021-06-21 12:51:03,124 INFO 127.0.0.1 - - [21/Jun/2021 12:51:03] "[35m[1mPOST /requests HTTP/1.1[0m" 201 -
+2021-06-21 12:51:03,530 INFO 127.0.0.1 - - [21/Jun/2021 12:51:03] "OPTIONS /requests/user HTTP/1.1" 200 -
+2021-06-21 12:51:03,582 INFO 127.0.0.1 - - [21/Jun/2021 12:51:03] "GET /requests/user HTTP/1.1" 200 -
+2021-06-21 12:51:20,667 INFO 127.0.0.1 - - [21/Jun/2021 12:51:20] "OPTIONS /logout HTTP/1.1" 200 -
+2021-06-21 12:51:20,679 INFO 127.0.0.1 - - [21/Jun/2021 12:51:20] "POST /logout HTTP/1.1" 200 -
+2021-06-21 12:51:33,764 INFO 127.0.0.1 - - [21/Jun/2021 12:51:33] "OPTIONS /login HTTP/1.1" 200 -
+2021-06-21 12:51:33,812 INFO 127.0.0.1 - - [21/Jun/2021 12:51:33] "POST /login HTTP/1.1" 200 -
+2021-06-21 12:51:34,311 INFO 127.0.0.1 - - [21/Jun/2021 12:51:34] "OPTIONS /requests/all HTTP/1.1" 200 -
+2021-06-21 12:51:34,361 INFO 127.0.0.1 - - [21/Jun/2021 12:51:34] "GET /requests/all HTTP/1.1" 200 -
+2021-06-21 12:52:45,522 INFO 127.0.0.1 - - [21/Jun/2021 12:52:45] "OPTIONS /requests/update HTTP/1.1" 200 -
+2021-06-21 12:52:45,587 INFO 127.0.0.1 - - [21/Jun/2021 12:52:45] "PUT /requests/update HTTP/1.1" 200 -
+2021-06-21 12:53:00,837 INFO 127.0.0.1 - - [21/Jun/2021 12:53:00] "OPTIONS /logout HTTP/1.1" 200 -
+2021-06-21 12:53:00,849 INFO 127.0.0.1 - - [21/Jun/2021 12:53:00] "POST /logout HTTP/1.1" 200 -
+2021-06-21 12:53:17,229 INFO 127.0.0.1 - - [21/Jun/2021 12:53:17] "OPTIONS /login HTTP/1.1" 200 -
+2021-06-21 12:53:17,284 INFO 127.0.0.1 - - [21/Jun/2021 12:53:17] "POST /login HTTP/1.1" 200 -
+2021-06-21 12:53:17,653 INFO 127.0.0.1 - - [21/Jun/2021 12:53:17] "OPTIONS /requests/user HTTP/1.1" 200 -
+2021-06-21 12:53:17,715 INFO 127.0.0.1 - - [21/Jun/2021 12:53:17] "GET /requests/user HTTP/1.1" 200 -
+2021-06-21 12:53:26,147 INFO 127.0.0.1 - - [21/Jun/2021 12:53:26] "OPTIONS /logout HTTP/1.1" 200 -
+2021-06-21 12:53:26,192 INFO 127.0.0.1 - - [21/Jun/2021 12:53:26] "POST /logout HTTP/1.1" 200 -
+2021-06-21 12:53:35,772 INFO 127.0.0.1 - - [21/Jun/2021 12:53:35] "OPTIONS /login HTTP/1.1" 200 -
+2021-06-21 12:53:35,821 INFO 127.0.0.1 - - [21/Jun/2021 12:53:35] "POST /login HTTP/1.1" 200 -
+2021-06-21 12:53:36,195 INFO 127.0.0.1 - - [21/Jun/2021 12:53:36] "OPTIONS /requests/all HTTP/1.1" 200 -
+2021-06-21 12:53:36,229 INFO 127.0.0.1 - - [21/Jun/2021 12:53:36] "GET /requests/all HTTP/1.1" 200 -
+2021-06-21 12:53:44,005 INFO 127.0.0.1 - - [21/Jun/2021 12:53:44] "OPTIONS /requests/all HTTP/1.1" 200 -
+2021-06-21 12:53:44,061 INFO 127.0.0.1 - - [21/Jun/2021 12:53:44] "GET /requests/all HTTP/1.1" 200 -
+2021-06-21 12:53:44,303 INFO 127.0.0.1 - - [21/Jun/2021 12:53:44] "OPTIONS /account/1 HTTP/1.1" 200 -
+2021-06-21 12:53:44,356 INFO 127.0.0.1 - - [21/Jun/2021 12:53:44] "GET /account/1 HTTP/1.1" 200 -
+2021-06-21 12:53:44,516 INFO 127.0.0.1 - - [21/Jun/2021 12:53:44] "OPTIONS /account/3 HTTP/1.1" 200 -
+2021-06-21 12:53:44,697 INFO 127.0.0.1 - - [21/Jun/2021 12:53:44] "GET /account/3 HTTP/1.1" 200 -
+2021-06-21 12:53:44,796 INFO 127.0.0.1 - - [21/Jun/2021 12:53:44] "OPTIONS /account/6 HTTP/1.1" 200 -
+2021-06-21 12:53:44,828 INFO 127.0.0.1 - - [21/Jun/2021 12:53:44] "GET /account/6 HTTP/1.1" 200 -
+2021-06-21 12:53:44,876 INFO 127.0.0.1 - - [21/Jun/2021 12:53:44] "OPTIONS /account/7 HTTP/1.1" 200 -
+2021-06-21 12:53:44,908 INFO 127.0.0.1 - - [21/Jun/2021 12:53:44] "GET /account/7 HTTP/1.1" 200 -
+2021-06-21 12:53:44,966 INFO 127.0.0.1 - - [21/Jun/2021 12:53:44] "OPTIONS /account/5 HTTP/1.1" 200 -
+2021-06-21 12:53:44,993 INFO 127.0.0.1 - - [21/Jun/2021 12:53:44] "GET /account/5 HTTP/1.1" 200 -
+2021-06-21 12:53:45,062 INFO 127.0.0.1 - - [21/Jun/2021 12:53:45] "OPTIONS /account/4 HTTP/1.1" 200 -
+2021-06-21 12:53:45,126 INFO 127.0.0.1 - - [21/Jun/2021 12:53:45] "GET /account/4 HTTP/1.1" 200 -
+2021-06-21 12:54:19,294 INFO 127.0.0.1 - - [21/Jun/2021 12:54:19] "OPTIONS /logout HTTP/1.1" 200 -
+2021-06-21 12:54:19,340 INFO 127.0.0.1 - - [21/Jun/2021 12:54:19] "POST /logout HTTP/1.1" 200 -

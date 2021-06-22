@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.comp.css">
+</head>
+<body>
+    <div class="u-background-gray">
+        <h1 class="u-center-text u-margin-bottom-med">Request management</h1>
+        <div class="row">
+      
+            <div class="col-1-of-2 u-center-text">
+                <h1 class="u-margin-bottom-med">Past Requests</h1>
+                <div id="past_req_container" class="u-margin-bottom-med">
+                    <h3>There are no requests</h3>
+                </div>
+                <button id="logout_button" onclick="log_out()" type="button" class="btn">Log out</button>
+            </div>
+            <div class="col-1-of-2 u-center-text">
+                <h1 class="u-margin-bottom-med">Pending Requests</h1>
+                <div id="pend_req_container" class="u-margin-bottom-med">
+                    <h3>There are no requests</h3>
+                </div>
+                <button id="request_button" onclick="view_statistics()" type="button" class="btn">Statistics</button>
+            </div>
+            
+            
+        </div>
+        <form class="form">
+            <h2 id="reim_title" class = "u-center-text"></h2>
+            <div class="form__group">
+    
+                
+                <label class="form__label" for="pw">Response:</label>
+                <br>
+                
+                <textarea id="reim_response" class="form__textarea"></textarea>
+
+                <label class="container">Approved
+                    <input id="aradio" type="radio" checked="checked" name="radio">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">Rejected
+                    <input id="rradio" type="radio" name="radio">
+                    <span class="checkmark"></span>
+                </label>
+                <button id="submit_button" onclick="update_request()" disabled type="button" class="btn">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+    <script src="scripts/logout.js"></script>
+    <script src="scripts/manager_page.js"></script>
+
+</html>

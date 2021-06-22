@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.comp.css">
+
+</head>
+<body>
+    <div class="u-background-gray">
+
+    <h1 id="reimHead" class="u-center-text">Reimbursement Request</h1>
+    <br>
+
+    <form class="form">
+        <div class="form__group">
+
+            <label class="form__label" for="samount">amount spent:</label>
+            <br>
+            <input class="form__input" type="number" id="samount" name="samount">
+            <br>
+            <label class="form__label" for="ramount">amount requested:</label>
+            <br>
+            <input class="form__input" type="number" id="ramount" name="ramount">
+            <br>
+            <label class="form__label" for="reason">reason:</label>
+            <br>
+            <textarea id="reim_reason" class="form__textarea"></textarea>
+            <div class="row">
+                
+                <div class="col-1-of-2 u-center-text"><button id="logout_button" onclick="log_out()" type="button" class="btn">Logout</button></div>
+                <div class="col-1-of-2 u-center-text"><button id="submit_button" onclick="sub_reim()" type="button" class="btn">Submit</button></div>
+
+            </div>
+            
+                
+
+
+        </div>
+    </form>
+    
+    
+    </div>
+
+</body>
+<script src="scripts/logout.js"></script>
+<script src="scripts/request.js"></script>
+</html>
